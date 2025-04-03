@@ -7,7 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Gokong</copyright>
-        <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/categories/themes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 03 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/categories/themes/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>test single</title>
+        <link>https://gokong.github.io/p/test-single/</link>
+        <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://gokong.github.io/p/test-single/</guid>
+        <description>&lt;img src="https://gokong.github.io/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post test single" /&gt;&lt;p&gt;内容测试
+这是第二行
+这是第三行&lt;/p&gt;
+&lt;h1 id=&#34;一级标题&#34;&gt;一级标题
+&lt;/h1&gt;&lt;h2 id=&#34;二级标题&#34;&gt;二级标题
+&lt;/h2&gt;&lt;h3 id=&#34;三级标题&#34;&gt;三级标题
+&lt;/h3&gt;</description>
+        </item>
+        <item>
         <title>Markdown Syntax Guide</title>
         <link>https://gokong.github.io/p/markdown-syntax-guide/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
