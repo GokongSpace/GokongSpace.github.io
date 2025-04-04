@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>多元函数 on Gokong Space</title>
+        <link>https://gokong.github.io/tags/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0/</link>
+        <description>Recent content in 多元函数 on Gokong Space</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Gokong</copyright>
+        <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/tags/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>多元函数的概念</title>
+        <link>https://gokong.github.io/p/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
+        <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://gokong.github.io/p/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
+        <description>&lt;h1 id=&#34;n维euclid空间&#34;&gt;n维Euclid空间
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;n元有序实数组的全体构成的集合：
+$$ \mathbb{R}^{n}=\left\{ \left ( x_{1},x_{2},\cdot \cdot \cdot ,x_{n} \right )|x_{i}\in \mathbb{R},i=1,2,\cdot \cdot \cdot ,n\right\}$$&lt;/li&gt;
+&lt;li&gt;$\mathbb{R}^{n}$ 中的元素有时也用单个字母表示，即$x=\left ( x_{1},x_{2},\cdot \cdot \cdot ,x_{n} \right )$，$x$也称为$\mathbb{R}^{n}$中的一个点。&lt;/li&gt;
+&lt;li&gt;$\mathbb{R}^{n}$在线性运算$\lambda x+\mu y=\left (\lambda x_{1}+\mu y_{1} ,\lambda x_{2}+\mu y_{2},\cdot \cdot \cdot ,\lambda x_{n}+\mu y_{n} \right )$下构成一个&lt;strong&gt;n维线性空间&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;两点间的距离定义为$\rho \left ( x，y \right )= \left| x-y\right|$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;邻域&#34;&gt;邻域
+&lt;/h1&gt;$$U\left ( P_{0},\delta  \right )=\left\{ P| \rho \left ( P,P_{0} \right )&lt;\delta \right\}$$$$\overset{\circ }{U}\left ( P_{0},\delta  \right )=\left\{ P|0&lt;\rho \left ( P,P_{0} \right )&lt;\delta \right\}$$&lt;p&gt;
+在不需要强调邻域的半径时，常记作 $U\left ( P_{0} \right )$  或 $\overset{\circ }{U}\left ( P_{0} \right )$.&lt;/p&gt;
+&lt;h1 id=&#34;内点外点边界点&#34;&gt;内点、外点、边界点
+&lt;/h1&gt;&lt;p&gt;边界点既不是内点也不是外点，它可能属于E也可能不属于E。边界点的全体称为E的&lt;strong&gt;边界&lt;/strong&gt;，记作 $\partial E$ .&lt;/p&gt;
+&lt;h1 id=&#34;开集与区域&#34;&gt;开集与区域
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;设点集 $E\subset \mathbb{R}^{2}$ ，若E中的每一点都是它的内点，则称E为 $\mathbb{R}^{2}$ 中的开集。&lt;/li&gt;
+&lt;li&gt;若E为连通的开集，则称E为 $\mathbb{R}^{2}$ 中的&lt;strong&gt;开区域&lt;/strong&gt;，简称&lt;strong&gt;区域&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;称$\bar{E}$为闭区域，即$\bar{E}=E \cup \partial E$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;有界集与无界集&#34;&gt;有界集与无界集
+&lt;/h1&gt;&lt;h1 id=&#34;聚点&#34;&gt;聚点
+&lt;/h1&gt;&lt;p&gt;设点集 $E\subset \mathbb{R}^{2}$ ，点$P_{0} \in \mathbb{R}^{2}$. 若$\forall  \varepsilon &amp;gt;0$，在$U\left ( P_{0}, \varepsilon \right)$内除了点$P_{0}$至少还包含$E$的一个点，则称$P_{0}$为$E$的聚点。
+注意：边界点不一定是聚点；聚点不一定属于$E$.&lt;/p&gt;
+&lt;h1 id=&#34;闭集&#34;&gt;闭集
+&lt;/h1&gt;&lt;p&gt;设点集 $E\subset \mathbb{R}^{2}$ ，若$E$的所有聚点都属于$E$，则称$E$为$\mathbb{R}^{2}$的闭集。
+注意：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;闭区域一定是闭集。&lt;/li&gt;
+&lt;li&gt;闭集&lt;strong&gt;不一定&lt;/strong&gt;是闭区域（闭集需要额外满足&lt;strong&gt;连通性&lt;/strong&gt;才能成为闭区域）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;多元函数&#34;&gt;多元函数
+&lt;/h1&gt;&lt;h1 id=&#34;二元函数的几何表示&#34;&gt;二元函数的几何表示
+&lt;/h1&gt;&lt;p&gt;其几何图形通常是空间的一张曲面。
+在Oxy面上的投影就是定义域。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
