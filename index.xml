@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Gokong</copyright>
-        <lastBuildDate>Thu, 03 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Chinese Test</title>
+        <link>https://gokong.github.io/p/test-chinese/</link>
+        <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://gokong.github.io/p/test-chinese/</guid>
+        <description>&lt;img src="https://gokong.github.io/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;</description>
+        </item>
+        <item>
         <title>ceshizhegeee</title>
         <link>https://gokong.github.io/p/ceshizhegeee/</link>
         <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
@@ -25,119 +33,6 @@
 &lt;/h1&gt;&lt;h2 id=&#34;二级标题&#34;&gt;二级标题
 &lt;/h2&gt;&lt;h3 id=&#34;三级标题&#34;&gt;三级标题
 &lt;/h3&gt;</description>
-        </item>
-        <item>
-        <title>定积分的应用</title>
-        <link>https://gokong.github.io/p/%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/</link>
-        <pubDate>Wed, 02 Apr 2025 22:14:14 +0800</pubDate>
-        
-        <guid>https://gokong.github.io/p/%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E5%BA%94%E7%94%A8/</guid>
-        <description>&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 提纲整理&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 课本例题&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 作业&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 课后习题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;微元法&#34;&gt;微元法
-&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;分割区间，写出 &lt;em&gt;部分量&lt;/em&gt; 的 &lt;em&gt;近似值&lt;/em&gt;
-$$
-	\Delta Q \approx f\left ( x \right ) \Delta x = f\left ( x \right )dx
-$$
-该近似值称为 &lt;em&gt;整体量&lt;/em&gt; 在该区间上的&lt;strong&gt;微元&lt;/strong&gt;
-$$
-      dQ = f\left ( x \right )dx
-$$&lt;/li&gt;
-&lt;li&gt;将&lt;strong&gt;微元&lt;/strong&gt;积分
-$$
-	Q = \int_{a}^{b} f\left ( x \right )dx
-$$&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;求平面图形的面积&#34;&gt;求平面图形的面积
-&lt;/h1&gt;&lt;p&gt;一般步骤：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;画图找积分区域&lt;/li&gt;
-&lt;li&gt;联立方程求交点&lt;/li&gt;
-&lt;li&gt;选择合适的积分变量
-&lt;ol&gt;
-&lt;li&gt;原函数易求&lt;/li&gt;
-&lt;li&gt;分割区域少&lt;/li&gt;
-&lt;li&gt;上、下限简单&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;直角坐标情形&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;以x为积分变量时
-$A = \int_{a}^{b} \left [  f\left ( x \right )- g\left ( x \right ) \right ]dx$&lt;/li&gt;
-&lt;li&gt;以y为积分变量时
-$A = \int_{c}^{d} \left [  \varphi \left  ( y \right )- \psi \left ( y \right ) \right ]dy$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-$$A = \frac{1}{2} \int_{\alpha }^{\beta } r^{2} \left ( \theta  \right )d\theta $$&lt;p&gt;
-其中，$r\left ( \theta  \right )$是长度，$\alpha、\beta、\theta$是角度.   在微小范围里，$d\theta=\theta$.
-[[极坐标]]知识补充&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;求体积&#34;&gt;求体积
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;已知平行截面面积&lt;/strong&gt;
-$$V = \int_{a }^{b} A\left ( x \right )dx$$
-其中，$A\left ( x \right )$为面积.（该面积是x的函数）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;求旋转体的体积&lt;/strong&gt;
-因为$A\left ( x \right )=\pi f^{2}\left ( x \right )$，所以代入上式(绕x轴旋转)得$$V=\int_{a}^{b}\pi f^{2}\left ( x \right )dx$$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;求平面曲线的弧长&#34;&gt;求平面曲线的弧长
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;直角坐标情形&lt;/strong&gt;
-以直代曲，写出弧长微元公式（弧微分公式）
-$$ds=\sqrt{1 + y&#39;^{2}} dx $$
-于是，弧长公式
-$$s=\int_{a}^{b}\sqrt{1 + y&#39;^{2}} dx$$&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;参数方程情形&lt;/strong&gt;
-$$\left\{\begin{matrix}
-x=\varphi \left ( t \right ) \\
- y=\psi \left ( t \right ) \\
-\end{matrix}\right.
-\left ( \alpha \leq t\leq \beta  \right ) $$
-则弧长微元（弧微分）
-$$ds=\sqrt{\varphi&#39;^{2}\left ( t \right )+\psi&#39;^{2}\left ( t \right )}dt$$
-于是，弧长公式
-$$s=\int_{\alpha }^{\beta }\sqrt{\varphi&#39;^{2}\left ( t \right )+\psi&#39;^{2}\left ( t \right )}dt$$&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;极坐标情形&lt;/strong&gt;
-[[极坐标]]转化为直角坐标
-$$\left\{\begin{matrix}
-x=r\left ( \theta  \right )cos\theta  \\
-y=r\left ( \theta  \right ) sin\theta \\
-\end{matrix}\right.$$
-把x、y带入[[弧微分公式]]，得
-$$s=\int_{\alpha }^{\beta }\sqrt{r^{2}\left ( \theta  \right )+r&#39;^{2}\left ( \theta  \right )}d\theta $$&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;定积分在物理中的应用&#34;&gt;定积分在物理中的应用
-&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;变力对物体做功问题&lt;/li&gt;
-&lt;li&gt;液体的静压力问题&lt;/li&gt;
-&lt;li&gt;引力问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;一些额外的思考&#34;&gt;一些额外的思考
-&lt;/h1&gt;$$
- r=a\sqrt{2}sin\theta \cdot\cdot\cdot\cdot\cdot\cdot（1）
-$$$$
- 两边同时乘以r得：r^{2}=a\sqrt{2}r \cdot sin\theta 
-$$$$
- 因为 r^{2}=x^{2}+y^{2}且y=r\cdot sin\theta 
-$$$$
-所以x^{2}+y^{2}=a\sqrt{2}\cdot y
-$$$$
-x^{2}+\left ( y-\frac{\sqrt{2}}{2} a \right )^{2}=\frac{1}{2}a^{2}\cdot\cdot\cdot\cdot\cdot\cdot（2）
-$$&lt;p&gt;
-画图可得，（1）与（2）得图像时完全相同的。
-同时，应当掌握这种 &lt;em&gt;极坐标表达式&lt;/em&gt; 转化为 &lt;em&gt;直角坐标表达式（非参数）&lt;/em&gt; 的方法。&lt;/p&gt;
-&lt;h1 id=&#34;一些并不全面的例题&#34;&gt;一些（并不全面的）例题
-&lt;/h1&gt;</description>
         </item>
         <item>
         <title>MyfirstBlog</title>
@@ -577,15 +472,6 @@ $$</description>
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://gokong.github.io/p/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://gokong.github.io/p/</guid>
-        <description>&lt;p&gt;02&lt;/p&gt;
-</description>
         </item>
         <item>
         <title>Links</title>
