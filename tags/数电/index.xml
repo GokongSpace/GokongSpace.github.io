@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>数电 on Gokong Space</title>
+        <link>https://gokong.github.io/tags/%E6%95%B0%E7%94%B5/</link>
+        <description>Recent content in 数电 on Gokong Space</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Gokong</copyright>
+        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/tags/%E6%95%B0%E7%94%B5/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>逻辑函数的表示方法</title>
+        <link>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</link>
+        <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</guid>
+        <description>&lt;h1 id=&#34;相邻项&#34;&gt;相邻项
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;相邻项：相邻两项，只有一个变量不同，且该变量以相反的形式出现。&lt;/li&gt;
+&lt;li&gt;（性质）：相邻项相加可以消去一项，例如：$F=ABC+A\bar{B}C=AC(B+\bar{B})=AC$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;表示逻辑函数的常用方法&#34;&gt;表示逻辑函数的常用方法
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;逻辑表达式：
+&lt;ul&gt;
+&lt;li&gt;由逻辑变量和与或非三种运算符构成的式子。&lt;/li&gt;
+&lt;li&gt;例如，异或函数：当两个变量取值相同时，函数取值为0；否则，函数取值为1. $$F=f\left ( A，B \right )=A\bar{B}+\bar{A}B$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;真值表&lt;/li&gt;
+&lt;li&gt;卡诺图&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;逻辑函数表达式的基本形式&#34;&gt;逻辑函数表达式的基本形式：
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;“与或”表达式：
+“与项”的“逻辑或”构成“与或”表达式。即，&lt;strong&gt;积之和&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;“或与”表达式：
+“或项”的“逻辑与”构成“或与”表达式。即，&lt;strong&gt;和之积&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;若逻辑函数以混合形式出现，则既不是与或表达式，也不是或与表达式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;最小项与最大项&#34;&gt;最小项与最大项
+&lt;/h1&gt;&lt;h2 id=&#34;最小项及最小项表达式&#34;&gt;最小项及最小项表达式：
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;“标准与或表达式”，又称作“最小项表达式”。&lt;/li&gt;
+&lt;li&gt;定义：设有n个逻辑变量，它们组成的“与项”中，每个变量或以原变量或以反变量的形式出现一次且仅出现一次，则称这个“与项”为n变量的最小项。记作：$m_{i}$
+&lt;ul&gt;
+&lt;li&gt;最小项编号的记忆方法：$A$为1，$\bar{A}$为0，带入编号使“与项”值为1.例如：$A\bar{B}\bar{C}$，带入100，其逻辑值为1，故$A\bar{B}\bar{C}$的编号为$m_{4}$ .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;最小项的性质&#34;&gt;最小项的性质
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;对于任意一个最小项$m_{i}$ ，有且仅有一组变量的取值能使其为1.（即最小项为1的概率最小，也因此得名）&lt;/li&gt;
+&lt;li&gt;任意两个最小项的逻辑积为0.&lt;/li&gt;
+&lt;li&gt;所有最小项的逻辑和为1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;最小项表达式&#34;&gt;最小项表达式
+&lt;/h3&gt;$$F=\overline{AB}+A\overline{B}+AB=m_{0}+m_{2}+m_{3}=\sum m^{2}\left ( 0,2,3 \right )$$&lt;p&gt;
+性质：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;若$m_{i}$是n变量逻辑函数$F=(A_{1},A_{2},\cdot\cdot\cdot,A_{n})$的一个最小项，则使$m_{i}=1$的一组变量取值也必定使F的值为1.&lt;/li&gt;
+&lt;li&gt;若$F_{1}$和$F_{2}$都是$A_{1},A_{2},\cdot\cdot\cdot,A_{n}$的函数，则$F=F_{1}+F_{2}$包括$F_{1}$和$F_{2}$中的所有最小项，$G=F_{1}\times F_{2}$包括$F_{1}$和$F_{2}$中的公有最小项。&lt;/li&gt;
+&lt;li&gt;若逻辑函数$\bar{F}$是逻辑函数$F$的反函数，则$\bar{F}$必定由$F$所包含的最小项之外的全部最小项组成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;最大项及最大项表达式&#34;&gt;最大项及最大项表达式：
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;“标准或与表达式”，又称作“最大项表达式”。&lt;/li&gt;
+&lt;li&gt;定义：设有n个逻辑变量，它们组成的“或项”中，每个变量或以原变量或以反变量的形式出现一次且仅出现一次，则称这个“或项”为n变量的最大项。记作：$M_{i}$
+&lt;ul&gt;
+&lt;li&gt;最大项编号的记忆方法：$A$为1，$\bar{A}$为0，带入编号使“或项”值为0.例如：$A+\bar{B}+\bar{C}$，带入011，其逻辑值为0，故$A+\bar{B}+\bar{C}$的编号为$m_{3}$ .&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;最大项的性质&#34;&gt;最大项的性质
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;对于任意一个最大项$M_{i}$ ，有且仅有一组变量的取值能使其为0.&lt;/li&gt;
+&lt;li&gt;任意两个最大项的逻辑和为1.&lt;/li&gt;
+&lt;li&gt;所有最大项的逻辑积为0.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;最大项表达式&#34;&gt;最大项表达式
+&lt;/h3&gt;$$F=(A+B+C)(A+B+\bar{C})(A+\bar{B}+C)=M_{0}\cdot M_{1}\cdot M_{2}= \prod  M^{3}\left ( 0,1,2 \right )$$&lt;p&gt;
+性质：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;根据最大项表达式的定义，我们可以推出类似于最小项表达式的三个性质。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;最小项与最大项的关系&#34;&gt;最小项与最大项的关系
+&lt;/h2&gt;&lt;p&gt;$\overline{m_{i}}=M_{i}$或者$m_{i}=\overline{M_{i}}$&lt;/p&gt;
+&lt;h1 id=&#34;逻辑函数表达式的转换&#34;&gt;逻辑函数表达式的转换
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;两种标准形式的转换（最小项表达式与最大项表达式的转换）：
+把同一个函数表达式$F$分别用“最小项之和”和“最大项之积“的形式表示。
+例如，对于3元函数表达式
+$$F= \sum m^{3}(2,3,6,7)=\prod M^{3}(0,1,4,5)$$
+可以发现，每一项的编号是”互补“的。可以用德摩根定理$F=\bar{\bar{F}}$ 或求反演来证明。&lt;/li&gt;
+&lt;li&gt;“与或”$\Rightarrow$&amp;ldquo;与非-与非&amp;rdquo;：
+两次求反。&lt;/li&gt;
+&lt;li&gt;“与或”$\Rightarrow$&amp;ldquo;或非-或非&amp;rdquo;：
+当F是最简与或表达式时，先求F的对偶式F‘，再将F‘变换成&amp;quot;与非-与非&amp;quot;，最后求F‘的对偶式。&lt;/li&gt;
+&lt;li&gt;“与或”$\Rightarrow$&amp;ldquo;与或非&amp;rdquo;：
+先求反函数$\bar{F}$，再对$\bar{F}$求反。&lt;/li&gt;
+&lt;li&gt;“与或”$\Rightarrow$&amp;ldquo;或与&amp;rdquo;：
+先求反函数$\bar{F}$，再对$\bar{F}$求反。再用摩根定律拆开。&lt;/li&gt;
+&lt;li&gt;“或与”$\Rightarrow$&amp;ldquo;或非-或非&amp;rdquo;：
+先求F的对偶式F‘并化简，然后求F‘的对偶式，再两次求反。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
