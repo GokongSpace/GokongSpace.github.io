@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>偏导数 on Gokong Space</title>
+        <link>https://gokong.github.io/tags/%E5%81%8F%E5%AF%BC%E6%95%B0/</link>
+        <description>Recent content in 偏导数 on Gokong Space</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Gokong</copyright>
+        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/tags/%E5%81%8F%E5%AF%BC%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>偏导数的概念</title>
+        <link>https://gokong.github.io/p/%E5%81%8F%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
+        <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://gokong.github.io/p/%E5%81%8F%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
+        <description>&lt;h1 id=&#34;偏导数的定义&#34;&gt;偏导数的定义
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;（定义）函数$z=f(x,y)$在点$P_{0}(x_{0},y_{0})$关于自变量$x$的偏导数$$\frac{\partial f}{\partial x}|_{(x_{0},y_{0})}=\displaystyle \lim_{\Delta x \to 0}\frac{\Delta _{x}z}{\Delta x}=\displaystyle \lim_{\Delta x \to 0}\frac{f(x_{0}+\Delta x,y_{0})-f(x_{0},y_{0})}{\Delta x}$$&lt;/li&gt;
+&lt;li&gt;$z=f(x,y)$的偏导函数的记号$$\frac{\partial z}{\partial x},\frac{\partial z}{\partial y};\frac{\partial f}{\partial x},\frac{\partial f}{\partial y};z_{x},z_{y};f_{x}(x,y),f_{y}(x,y);$$$$f&#39;_{1}(x,y),f&#39;_{2}(x,y);f_{x},f_{y};f&#39;_{1},f&#39;_{2}$$&lt;/li&gt;
+&lt;li&gt;由偏导数的定义可知，求$f_{x}(x,y)$实际上就是把$f(x,y)$中的$y$看作常数，从而把$f(x,y)$当作$x$的一元函数求导。&lt;/li&gt;
+&lt;li&gt;偏导数的符号是一个整体符号，不能看作分子与分母的商。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;偏导数的几何意义&#34;&gt;偏导数的几何意义
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;$f_{x}(x_{0},y_{0})$就是曲线$$C_{1}:\left\{\begin{matrix}z=f(x，y) \\y=y_{0}\end{matrix}\right.$$在点$$M_{0}(x_{0},y_{0},f(x_{0},y_{0}))$$处的切线对x轴的斜率。&lt;/li&gt;
+&lt;li&gt;切向量$T_{x}=(1,0,f(x_{0},y_{0}))$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;连续性与可偏导性的关系&#34;&gt;连续性与可偏导性的关系
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;$f(x,y)$在一点处关于两个变量分别连续，仅能代表它对单变量连续，&lt;strong&gt;推不出&lt;/strong&gt;它在该点连续。&lt;/li&gt;
+&lt;li&gt;$f(x,y)$某一点连续，&lt;strong&gt;推不出&lt;/strong&gt;它在该点可偏导。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;高阶偏导数&#34;&gt;高阶偏导数
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;二阶偏导数共有四种
+$$\frac{\partial }{\partial x}\left ( \frac{\partial z}{\partial x} \right )=\frac{\partial ^{2}z}{\partial x^{2}}=\frac{\partial ^{2}f}{\partial x^{2}}=z_{xx}=f_{xx}(x,y)$$
+$$\frac{\partial }{\partial y}\left ( \frac{\partial z}{\partial x} \right )=\frac{\partial ^{2}z}{\partial x^{}\partial y^{}}=\frac{\partial ^{2}f}{\partial x^{}\partial y^{}}=z_{xy}=f_{xy}(x,y)$$
+$$\frac{\partial }{\partial x}\left ( \frac{\partial z}{\partial y} \right )=\frac{\partial ^{2}z}{\partial y^{}\partial x^{}}=\frac{\partial ^{2}f}{\partial y^{}\partial x^{}}=z_{yx}=f_{yx}(x,y)$$
+$$\frac{\partial }{\partial y}\left ( \frac{\partial z}{\partial y} \right )=\frac{\partial ^{2}z}{\partial y^{2}}=\frac{\partial ^{2}f}{\partial y^{2}}=z_{yy}=f_{yy}(x,y)$$
+其中，第二行称为：z先对x后对y的二阶混合偏导数。&lt;/li&gt;
+&lt;li&gt;（定理）如果函数$f$在区域D内处处存在直到k阶的所有偏导数且所有这些偏导数都在D内连续，则$f$在D内的&lt;strong&gt;k阶混合偏导数&lt;/strong&gt;与&lt;strong&gt;求导的次序&lt;/strong&gt;无关。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

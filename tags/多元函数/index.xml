@@ -13,9 +13,8 @@
         <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
         
         <guid>https://gokong.github.io/p/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</guid>
-        <description>&lt;ul&gt;
-&lt;li&gt;连续函数的定义
-&lt;ul&gt;
+        <description>&lt;h1 id=&#34;连续函数的定义&#34;&gt;连续函数的定义
+&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;与一元函数一样，仍用极限值等于函数值来定义多元函数的连续性。&lt;/li&gt;
 &lt;li&gt;（定义）设函数$f(x,y)$在点$P_{0}(x_{0},y_{0})$的某个邻域$U(P_{0})$内有定义。若$$ \displaystyle \lim_{(x,y) \to (0,0)}f(x,y)=f(x_{0},y_{0})$$且对于$\forall \varepsilon &amp;gt; 0,\exists \delta &amp;gt;0$，使得当$$\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}}&lt;\delta $$时，有$$\left | f(x,y)-f(x_{0}-y_{0})\right |&lt;\varepsilon $$，则称函数$f(x,y)$在点$P_{0}$连续。&lt;/li&gt;
 &lt;li&gt;理解：在某一点连续需要满足三个条件
@@ -27,22 +26,19 @@
 &lt;/li&gt;
 &lt;li&gt;若函数在定义域D上的每一点都连续，则称该函数是D上的连续函数。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;连续函数的运算法则
-&lt;ul&gt;
+&lt;h1 id=&#34;连续函数的运算法则&#34;&gt;连续函数的运算法则
+&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;四则运算法则&lt;/li&gt;
 &lt;li&gt;复合函数的连续性&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;多元函数关于单变量的连续性
-&lt;ul&gt;
+&lt;h1 id=&#34;多元函数关于单变量的连续性&#34;&gt;多元函数关于单变量的连续性
+&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;（方法）固定一个变量，则函数变成另一个变量的一元函数。&lt;/li&gt;
 &lt;li&gt;（结论）若$f(x,y)$在点$(x_{0},y_{0})$处连续，则$f(x,y)$在点$(x_{0},y_{0})$处分别关于变量x和y连续。&lt;/li&gt;
 &lt;li&gt;（结论）反之，若$f(x,y)$在点$(x_{0},y_{0})$处分别关于变量x和y连续，则$f(x,y)$在点$(x_{0},y_{0})$处&lt;strong&gt;不一定&lt;/strong&gt;连续。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;有界闭区间上连续函数的性质
-&lt;ul&gt;
+&lt;h1 id=&#34;有界闭区间上连续函数的性质&#34;&gt;有界闭区间上连续函数的性质
+&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;有界性定理：
 若函数在有界闭区域D上连续，则该函数在D上有界。&lt;/li&gt;
 &lt;li&gt;最值定理：
@@ -52,12 +48,13 @@
 &lt;li&gt;一致连续性定理：
 若函数在有界闭区域D上连续，则该函数在D上一致连续。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;多元初等函数的连续性
-&lt;ul&gt;
+&lt;h1 id=&#34;多元初等函数的连续性&#34;&gt;多元初等函数的连续性
+&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;一切多元初等函数在其定义区域内都是连续的。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+&lt;h1 id=&#34;证明多元函数不连续或证明多元函数极限不存在的常用方法&#34;&gt;证明多元函数不连续或证明多元函数极限不存在的常用方法：
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;令$(x,y)$沿着某一条路径趋近于极限点或极限，然后考察该极限是否与路径有关或者是否等于函数值。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
