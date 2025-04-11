@@ -73,7 +73,12 @@ $$ \mathbb{R}^{n}=\left\{ \left ( x_{1},x_{2},\cdot \cdot \cdot ,x_{n} \right )|
 &lt;li&gt;两点间的距离定义为$\rho \left ( x，y \right )= \left| x-y\right|$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;邻域&#34;&gt;邻域
-&lt;/h1&gt;$$U\left ( P_{0},\delta  \right )=\left\{ P| \rho \left ( P,P_{0} \right )&lt;\delta \right\}$$$$\overset{\circ }{U}\left ( P_{0},\delta  \right )=\left\{ P|0&lt;\rho \left ( P,P_{0} \right )&lt;\delta \right\}$$&lt;p&gt;
+&lt;/h1&gt;&lt;p&gt;点 $P_{0}$ 的 $\delta$ 邻域（本质是点集），记作：
+&lt;/p&gt;
+$$U\left ( P_{0},\delta  \right )=\left\{ P| \rho \left ( P,P_{0} \right )&lt;\delta \right\}$$&lt;p&gt;
+点 $P_{0}$ 的去心 $\delta$ 邻域，记作
+&lt;/p&gt;
+$$\overset{\circ }{U}\left ( P_{0},\delta  \right )=\left\{ P|0&lt;\rho \left ( P,P_{0} \right )&lt;\delta \right\}$$&lt;p&gt;
 在不需要强调邻域的半径时，常记作 $U\left ( P_{0} \right )$  或 $\overset{\circ }{U}\left ( P_{0} \right )$.&lt;/p&gt;
 &lt;h1 id=&#34;内点外点边界点&#34;&gt;内点、外点、边界点
 &lt;/h1&gt;&lt;p&gt;边界点既不是内点也不是外点，它可能属于E也可能不属于E。边界点的全体称为E的&lt;strong&gt;边界&lt;/strong&gt;，记作 $\partial E$ .&lt;/p&gt;

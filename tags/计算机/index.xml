@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>数电 on Gokong Space</title>
-        <link>https://gokong.github.io/tags/%E6%95%B0%E7%94%B5/</link>
-        <description>Recent content in 数电 on Gokong Space</description>
+        <title>计算机 on Gokong Space</title>
+        <link>https://gokong.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+        <description>Recent content in 计算机 on Gokong Space</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Gokong</copyright>
-        <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/tags/%E6%95%B0%E7%94%B5/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>逻辑函数的化简</title>
         <link>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%96%E7%AE%80/</link>
         <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>

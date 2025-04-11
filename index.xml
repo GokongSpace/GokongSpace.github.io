@@ -7,7 +7,87 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Gokong</copyright>
-        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>逻辑函数的化简</title>
+        <link>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%96%E7%AE%80/</link>
+        <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%96%E7%AE%80/</guid>
+        <description>&lt;h1 id=&#34;写在前面&#34;&gt;写在前面
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;“与或”表达式的最简式的定义
+在该表达式中同时满足：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;该式的乘积项最少；&lt;/li&gt;
+&lt;li&gt;该式不能用变量更少的乘积项代替。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;“或与”表达式的最简式的定义与上述类似。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;公式化简法&#34;&gt;公式化简法
+&lt;/h1&gt;&lt;p&gt;虽然公式化简法不受变量个数的限制，但化简过程没有固定的规律可循，直观性差，带有一定的试探性，并且难以判断结果是否最简。为了寻找更简单的方法，人们研究出了卡诺图化简法。&lt;/p&gt;
+&lt;h1 id=&#34;卡诺图化简法&#34;&gt;卡诺图化简法
+&lt;/h1&gt;&lt;h2 id=&#34;卡诺图的构成&#34;&gt;卡诺图的构成
+&lt;/h2&gt;&lt;p&gt;由$2^{n}$个小方格构成，n表示变量的个数。&lt;br&gt;
+每个小方格都对应一个最小项。&lt;br&gt;
+在逻辑上相邻的最小项在几何位置上也相邻（包括首位相邻）。&lt;br&gt;
+五变量卡诺图具有重叠相邻性。&lt;/p&gt;
+&lt;h2 id=&#34;用卡诺图表示逻辑函数&#34;&gt;用卡诺图表示逻辑函数
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;用卡诺图表示最小项表达式：&lt;br&gt;
+如果逻辑函数以最小项的形式给出,则在构成函数的每个最小项相应的卡诺图小方格中填1,其余的小方格中填0。&lt;/li&gt;
+&lt;li&gt;用卡诺图表示&lt;strong&gt;非&lt;/strong&gt;最小项表达式：
+用互补律$A+\bar{A}=1$变换成最小项表达式，然后用上述方法。&lt;/li&gt;
+&lt;li&gt;直接用卡诺图表示非最小项的与或表达式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;用卡诺图化简逻辑函数&#34;&gt;用卡诺图化简逻辑函数
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;用卡诺图化简逻辑函数的原理
+卡诺图形象地表达了最小项之间的相邻性。如相邻的两小方格均填1，则可用相邻性消去一个变量,使函数得以简化。&lt;/li&gt;
+&lt;li&gt;合并&lt;strong&gt;最小项&lt;/strong&gt;的规则
+&lt;strong&gt;消去&lt;/strong&gt;卡诺圈取值&lt;strong&gt;改变&lt;/strong&gt;的变量，&lt;strong&gt;保留&lt;/strong&gt;取值&lt;strong&gt;不变&lt;/strong&gt;的变量的&lt;strong&gt;逻辑与&lt;/strong&gt;就是合并的结果。&lt;/li&gt;
+&lt;li&gt;合并最小项的规律：
+&lt;ol&gt;
+&lt;li&gt;卡诺圈中小方格的个数必须是$2^{i}$个。&lt;/li&gt;
+&lt;li&gt;卡诺圈中的$2^{i}$个最小项合并，将消去i个变量。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;用卡诺图化简逻辑函数的具体实践步骤：
+&lt;ol&gt;
+&lt;li&gt;用卡诺图表示所要化简的逻辑函数；&lt;/li&gt;
+&lt;li&gt;把卡诺图中所有填1的小方格用卡诺圈圈起来。画圈时必须遵守如下原则:
+&lt;ol&gt;
+&lt;li&gt;每个圈内1的个数必须是$2^{i}$个；&lt;/li&gt;
+&lt;li&gt;每个圈中某些小方格可以多次被圈，但必须保证每个圈内至少有一个小方格仅被圈一次；&lt;/li&gt;
+&lt;li&gt;卡诺圈的个数最少；&lt;/li&gt;
+&lt;li&gt;每个圈应尽量大；&lt;/li&gt;
+&lt;li&gt;任意一个填1的小方格都会被圈。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;将合并的与项进行逻辑加；&lt;/li&gt;
+&lt;li&gt;如果卡诺图中填0的小方格比填1的少，也可以圈0先求得简化的&lt;strong&gt;反函数&lt;/strong&gt;，然后再求反得到最简与或式。&lt;/li&gt;
+&lt;li&gt;无关项：在小方格中填“d”，d可以看作1也可以看作0. 一个卡诺圈里不能全是d.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;用卡诺图化简最大项表达式&#34;&gt;用卡诺图化简最大项表达式
+&lt;/h2&gt;&lt;p&gt;以上我们用化简最小项表达式来介绍卡诺图法，化简最大项表达式的方法与之类似。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在最大项对应的小方格中填“0”.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;一个逻辑函数表达式对应一个卡诺图。&lt;/li&gt;
+&lt;li&gt;共享项：对于多输出函数，为了节省逻辑门的个数，我们尽可能使化简后的不同逻辑函数表达式有共有的项。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;事实上,卡诺图、真值表、逻辑表达式之间是可以相互转换的。
+从真值表向逻辑函数的转换：将真值表中函数F=1所对应的最小项求逻辑和。从真值表得到卡诺图：将真值表的函数值1或0,按顺序直接填入卡诺图相对应的小方格内。&lt;/p&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        <item>
         <title>多元函数的连续性</title>
         <link>https://gokong.github.io/p/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</link>
         <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
@@ -105,7 +185,10 @@
 &lt;li&gt;所有最小项的逻辑和为1.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;最小项表达式&#34;&gt;最小项表达式
-&lt;/h3&gt;$$F=\overline{AB}+A\overline{B}+AB=m_{0}+m_{2}+m_{3}=\sum m^{2}\left ( 0,2,3 \right )$$&lt;p&gt;
+&lt;/h3&gt;&lt;p&gt;最小项表达式（标准与或表达式、主析取范式）：将逻辑函数用最小项之和的形式来表示。
+例如：
+&lt;/p&gt;
+$$F=\overline{AB}+A\overline{B}+AB=m_{0}+m_{2}+m_{3}=\sum m^{2}\left ( 0,2,3 \right )$$&lt;p&gt;
 性质：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;若$m_{i}$是n变量逻辑函数$F=(A_{1},A_{2},\cdot\cdot\cdot,A_{n})$的一个最小项，则使$m_{i}=1$的一组变量取值也必定使F的值为1.&lt;/li&gt;
@@ -128,7 +211,10 @@
 &lt;li&gt;所有最大项的逻辑积为0.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;最大项表达式&#34;&gt;最大项表达式
-&lt;/h3&gt;$$F=(A+B+C)(A+B+\bar{C})(A+\bar{B}+C)=M_{0}\cdot M_{1}\cdot M_{2}= \prod  M^{3}\left ( 0,1,2 \right )$$&lt;p&gt;
+&lt;/h3&gt;&lt;p&gt;最大项表达式：将逻辑函数用最大项之积的形式表示。
+例如：
+&lt;/p&gt;
+$$F=(A+B+C)(A+B+\bar{C})(A+\bar{B}+C)=M_{0}\cdot M_{1}\cdot M_{2}= \prod  M^{3}\left ( 0,1,2 \right )$$&lt;p&gt;
 性质：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;根据最大项表达式的定义，我们可以推出类似于最小项表达式的三个性质。&lt;/li&gt;
@@ -141,7 +227,11 @@
 把同一个函数表达式$F$分别用“最小项之和”和“最大项之积“的形式表示。
 例如，对于3元函数表达式
 $$F= \sum m^{3}(2,3,6,7)=\prod M^{3}(0,1,4,5)$$
-可以发现，每一项的编号是”互补“的。可以用德摩根定理$F=\bar{\bar{F}}$ 或求反演来证明。&lt;/li&gt;
+可以发现，每一项的编号是”互补“的。可以用德摩根定理$F=\bar{\bar{F}}$ 或求反演来证明。
+&lt;ul&gt;
+&lt;li&gt;另外,我们有取非的性质$$\bar{F}= (0,1,4,5)$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;“与或”$\Rightarrow$&amp;ldquo;与非-与非&amp;rdquo;：
 两次求反。&lt;/li&gt;
 &lt;li&gt;“与或”$\Rightarrow$&amp;ldquo;或非-或非&amp;rdquo;：
@@ -234,7 +324,12 @@ $$ \mathbb{R}^{n}=\left\{ \left ( x_{1},x_{2},\cdot \cdot \cdot ,x_{n} \right )|
 &lt;li&gt;两点间的距离定义为$\rho \left ( x，y \right )= \left| x-y\right|$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;邻域&#34;&gt;邻域
-&lt;/h1&gt;$$U\left ( P_{0},\delta  \right )=\left\{ P| \rho \left ( P,P_{0} \right )&lt;\delta \right\}$$$$\overset{\circ }{U}\left ( P_{0},\delta  \right )=\left\{ P|0&lt;\rho \left ( P,P_{0} \right )&lt;\delta \right\}$$&lt;p&gt;
+&lt;/h1&gt;&lt;p&gt;点 $P_{0}$ 的 $\delta$ 邻域（本质是点集），记作：
+&lt;/p&gt;
+$$U\left ( P_{0},\delta  \right )=\left\{ P| \rho \left ( P,P_{0} \right )&lt;\delta \right\}$$&lt;p&gt;
+点 $P_{0}$ 的去心 $\delta$ 邻域，记作
+&lt;/p&gt;
+$$\overset{\circ }{U}\left ( P_{0},\delta  \right )=\left\{ P|0&lt;\rho \left ( P,P_{0} \right )&lt;\delta \right\}$$&lt;p&gt;
 在不需要强调邻域的半径时，常记作 $U\left ( P_{0} \right )$  或 $\overset{\circ }{U}\left ( P_{0} \right )$.&lt;/p&gt;
 &lt;h1 id=&#34;内点外点边界点&#34;&gt;内点、外点、边界点
 &lt;/h1&gt;&lt;p&gt;边界点既不是内点也不是外点，它可能属于E也可能不属于E。边界点的全体称为E的&lt;strong&gt;边界&lt;/strong&gt;，记作 $\partial E$ .&lt;/p&gt;
