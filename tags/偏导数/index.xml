@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>偏导数 on Gokong Space</title>
-        <link>https://gokong.github.io/tags/%E5%81%8F%E5%AF%BC%E6%95%B0/</link>
+        <link>https://gokongspace.github.io/tags/%E5%81%8F%E5%AF%BC%E6%95%B0/</link>
         <description>Recent content in 偏导数 on Gokong Space</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Gokong</copyright>
-        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/tags/%E5%81%8F%E5%AF%BC%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>Gokong Space</copyright>
+        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokongspace.github.io/tags/%E5%81%8F%E5%AF%BC%E6%95%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>偏导数的概念</title>
-        <link>https://gokong.github.io/p/%E5%81%8F%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
+        <link>https://gokongspace.github.io/p/%E5%81%8F%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5/</link>
         <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://gokong.github.io/p/%E5%81%8F%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
+        <guid>https://gokongspace.github.io/p/%E5%81%8F%E5%AF%BC%E6%95%B0%E7%9A%84%E6%A6%82%E5%BF%B5/</guid>
         <description>&lt;h1 id=&#34;偏导数的定义&#34;&gt;偏导数的定义
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;（定义）函数$z=f(x,y)$在点$P_{0}(x_{0},y_{0})$关于自变量$x$的偏导数$$\frac{\partial f}{\partial x}|_{(x_{0},y_{0})}=\displaystyle \lim_{\Delta x \to 0}\frac{\Delta _{x}z}{\Delta x}=\displaystyle \lim_{\Delta x \to 0}\frac{f(x_{0}+\Delta x,y_{0})-f(x_{0},y_{0})}{\Delta x}$$&lt;/li&gt;

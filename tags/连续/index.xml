@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>连续 on Gokong Space</title>
-        <link>https://gokong.github.io/tags/%E8%BF%9E%E7%BB%AD/</link>
+        <link>https://gokongspace.github.io/tags/%E8%BF%9E%E7%BB%AD/</link>
         <description>Recent content in 连续 on Gokong Space</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Gokong</copyright>
-        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/tags/%E8%BF%9E%E7%BB%AD/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>Gokong Space</copyright>
+        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokongspace.github.io/tags/%E8%BF%9E%E7%BB%AD/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>多元函数的连续性</title>
-        <link>https://gokong.github.io/p/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</link>
+        <link>https://gokongspace.github.io/p/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</link>
         <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://gokong.github.io/p/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</guid>
+        <guid>https://gokongspace.github.io/p/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7/</guid>
         <description>&lt;h1 id=&#34;连续函数的定义&#34;&gt;连续函数的定义
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;与一元函数一样，仍用极限值等于函数值来定义多元函数的连续性。&lt;/li&gt;

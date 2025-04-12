@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>计算机 on Gokong Space</title>
-        <link>https://gokong.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+        <link>https://gokongspace.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
         <description>Recent content in 计算机 on Gokong Space</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>Gokong</copyright>
-        <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokong.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>Gokong Space</copyright>
+        <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokongspace.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>逻辑函数的化简</title>
-        <link>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%96%E7%AE%80/</link>
+        <link>https://gokongspace.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%96%E7%AE%80/</link>
         <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%96%E7%AE%80/</guid>
+        <guid>https://gokongspace.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%96%E7%AE%80/</guid>
         <description>&lt;h1 id=&#34;写在前面&#34;&gt;写在前面
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;“与或”表达式的最简式的定义
@@ -89,10 +89,10 @@
         </item>
         <item>
         <title>逻辑函数的表示方法</title>
-        <link>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</link>
+        <link>https://gokongspace.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</link>
         <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://gokong.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</guid>
+        <guid>https://gokongspace.github.io/p/%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95/</guid>
         <description>&lt;h1 id=&#34;相邻项&#34;&gt;相邻项
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;相邻项：相邻两项，只有一个变量不同，且该变量以相反的形式出现。&lt;/li&gt;
