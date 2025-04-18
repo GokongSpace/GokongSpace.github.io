@@ -7,7 +7,67 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Gokong Space</copyright>
-        <lastBuildDate>Sat, 12 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokongspace.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokongspace.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>方向导数和梯度</title>
+        <link>https://gokongspace.github.io/p/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%92%8C%E6%A2%AF%E5%BA%A6/</link>
+        <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://gokongspace.github.io/p/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%92%8C%E6%A2%AF%E5%BA%A6/</guid>
+        <description>&lt;h1 id=&#34;方向导数的定义&#34;&gt;方向导数的定义
+&lt;/h1&gt;&lt;p&gt;设函数$z=f(x,y)$在点$P_{0}(x_{0},y_{0})$的某邻域$U(P_{0})$内有定义，$\vec{l}$为非零向量，$\vec{e}&lt;em&gt;{l}=(cos\alpha,cos\beta)$是与$\vec{l}$同方向的单位向量. 若极限
+$$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\displaystyle \lim_{t \to 0^{+}}\frac{f(x_{0}+tcos\alpha ,y_{0}+tcos\beta )-f(x_{0},y_{0})}{t}\tag{1}$$
+存在，则称此极限值$\frac{\partial f}{\partial l}|&lt;/em&gt;{(x_{0},y_{0})}$为函数$z=f(x,y)$在点$P_{0}$处沿方向$\vec{l}$的方向导数.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;特别指出，这里的极限是单侧极限，这一点与偏导数概念是有区别的。&lt;/li&gt;
+&lt;li&gt;沿x轴正向（取$\vec{e}&lt;em&gt;{l}=(1,0)$）的方向导数为$\frac{\partial f}{\partial x}$；沿x轴负向（取$\vec{e}&lt;/em&gt;{l}=(-1,0)$）的方向导数为$-\frac{\partial f}{\partial x}$.&lt;/li&gt;
+&lt;li&gt;若函数在该点沿x轴正向和负向的方向是导数都存在，偏导数$\frac{\partial f}{\partial x}$也不一定存在。更一般地，即使沿任意方向的方向导数都存在，也不一定可偏导。&lt;/li&gt;
+&lt;li&gt;可偏导无法推出沿任意方向的方向导数都存在，仅能推出沿坐标轴方向的方向导数存在。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;方向导数的计算&#34;&gt;方向导数的计算
+&lt;/h1&gt;&lt;p&gt;可微不是方向导数存在的必要条件，可微是方向导数存在的充分条件。
+方向导数可以通过偏导数来计算.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;（定理）设函数$z = f(x,y)$ 在点$P_{0}(x_{0},y_{0})$处可微，$\vec{l}$为任一非零向量，$\vec{e}&lt;em&gt;{l}= (cos\alpha,cos\beta)$是与$\vec{l}$同方向的单位向量，则函数$f(x,y)$在点$P&lt;/em&gt;{0}$沿方向$\vec{l}$的方向导数存在，且有（方向导数的计算公式）
+$$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=f_{x}(x_{0},y_{0})cos\alpha +f_{y}(x_{0},y_{0})cos\beta .\tag{2}$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;方向导数的定义和计算公式的推广&#34;&gt;方向导数的定义和计算公式的推广
+&lt;/h1&gt;&lt;p&gt;该计算公式可以推广到三元及以上的函数：
+设$l$是空间上非零向量，其方向余弦为$cos\alpha ,cos\beta ,cos\gamma$，则函数$u=f(x,y,z)$在点$P_{0}(x_{0},y_{0},z_{0})$处沿方向$\vec{l}$的方向导数
+&lt;/p&gt;
+$$\frac{\partial u}{\partial l}|_{(x_{0},y_{0},z_{0})}=\displaystyle \lim_{t \to 0^{+}}\frac{f(x_{0}+tcos\alpha ,y_{0}+tcos\beta,z_{0}+tcos\gamma)-f(x_{0},y_{0},z_{0})}{t}.\tag{3}$$&lt;p&gt;
+如果$u=f(x,y,z)$在点$P_{0}(x_{0},y_{0},z_{0})$处可微，则
+&lt;/p&gt;
+$$\frac{\partial u}{\partial l}|_{(x_{0},y_{0},z_{0})}=f_{x}(x_{0},y_{0},z_{0})cos\alpha +f_{y}(x_{0},y_{0},z_{0})cos\beta+f_{z}(x_{0},y_{0},z_{0})cos\gamma .\tag{4}$$&lt;h1 id=&#34;梯度&#34;&gt;梯度
+&lt;/h1&gt;&lt;p&gt;函数在给定点处沿不同方向的方向导数一般是不一样的，那么函数&lt;strong&gt;沿什么方向&lt;/strong&gt;的&lt;strong&gt;方向导数最大&lt;/strong&gt;呢？为此，引人梯度的概念.
+（定义）设函数$z=f(x,y)$在点$P_{0}$处有连续的偏导数，则称&lt;strong&gt;向量&lt;/strong&gt;
+&lt;/p&gt;
+$$gradf(x_{0},y_{0})=\nabla f(x_{0},y_{0})=f_{x}(x_{0},y_{0})\vec{i}+f_{y}(x_{0},y_{0})\vec{j}\tag{5}$$&lt;p&gt;
+为函数$z=f(x,y)$在点$P_{0}$处的&lt;strong&gt;梯度&lt;/strong&gt;（gradient）.
+则方向导数的计算公式$(2)$可写作
+&lt;/p&gt;
+$$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\nabla f(x_{0},y_{0})\cdot \vec{e}_{l}\tag{6}$$&lt;p&gt;
+即，函数$z=f(x,y)$在点$P_{0}$处沿方向$\vec{l}$的方向导数等于函数在该点的&lt;strong&gt;梯度&lt;/strong&gt;与&lt;strong&gt;单位向量&lt;/strong&gt;的&lt;strong&gt;数量积&lt;/strong&gt;。
+化简$(6)$式
+&lt;/p&gt;
+$$\nabla f(x_{0},y_{0})\cdot \vec{e}_{l}=|\nabla f(x_{0},y_{0})|\cdot |\vec{e}_{l}|\cdot cos\theta=|\nabla f(x_{0},y_{0})|cos\theta,\tag{7}$$&lt;p&gt;
+其中$\theta$是向量$\nabla f(x_{0},y_{0})$与向量$\vec{l}$的夹角。
+因此，函数$z=f(x,y)$在点$P_{0}$处沿&lt;strong&gt;梯度&lt;/strong&gt;$\nabla f(x_{0},y_{0})$方向的方向导数最大，沿负梯度方向的方向导数最小。最大值为$|\nabla f(x_{0},y_{0})|$，最小值为$-|\nabla f(x_{0},y_{0})|.$&lt;/p&gt;
+&lt;h1 id=&#34;梯度的推广&#34;&gt;梯度的推广
+&lt;/h1&gt;&lt;p&gt;将上述概念和结论推广到三元函数：
+设函数$u=f(x,y,z)$在点$P_{0}(x_{0},y_{0},z_{0})$处有连续的偏导数，则它在点$P_{0}$处的梯度为
+&lt;/p&gt;
+$$gradf(x_{0},y_{0},z_{0})=\nabla f(x_{0},y_{0},z_{0})=f_{x}(x_{0},y_{0},z_{0})\vec{i}+f_{y}(x_{0},y_{0},z_{0})\vec{j}+f_{z}(x_{0},y_{0},z_{0})\vec{k}.\tag{8}$$&lt;p&gt;当$u=f(x,y,z)$在点$P_{0}$处可微时，它在点$P_{0}$处沿方向$\vec{l}$的方向导数为
+&lt;/p&gt;
+$$\frac{\partial f}{\partial l}|_{(x_{0},y_{0},z_{0})}=\nabla f(x_{0},y_{0},z_{0})\cdot \vec{e}_{l}.\tag{9}$$&lt;h1 id=&#34;梯度的性质&#34;&gt;梯度的性质
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;$\nabla (c_{1}u+c_{2}v)=c_{1}\nabla u+c_{2}\nabla v$，$c_{1},c_{2}$为常数；&lt;/li&gt;
+&lt;li&gt;$\nabla(uv)=v\nabla u+u\nabla v ;$&lt;/li&gt;
+&lt;li&gt;$\nabla(\frac{u}{v})=\frac{v\nabla u-u\nabla v}{v^{2}},v\neq 0;$&lt;/li&gt;
+&lt;li&gt;$\nabla f(u)=f&amp;rsquo;(u)\nabla u$，$f$是可微函数。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>全微分</title>
         <link>https://gokongspace.github.io/p/%E5%85%A8%E5%BE%AE%E5%88%86/</link>
         <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
