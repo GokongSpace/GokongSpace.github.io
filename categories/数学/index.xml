@@ -14,7 +14,7 @@
         
         <guid>https://gokongspace.github.io/p/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%92%8C%E6%A2%AF%E5%BA%A6/</guid>
         <description>&lt;h1 id=&#34;方向导数的定义&#34;&gt;方向导数的定义
-&lt;/h1&gt;&lt;p&gt;设函数$z=f(x,y)$在点$P_{0}(x_{0},y_{0})$的某邻域$U(P_{0})$内有定义， $\vec{l}$ 为非零向量， $\vec{e}&lt;em&gt;{l}=(cos\alpha,cos\beta)$ 是与 $\vec{l}$ 同方向的单位向量. 若极限
+&lt;/h1&gt;&lt;p&gt;设函数$z=f(x,y)$在点$P_{0}(x_{0},y_{0})$的某邻域$U(P_{0})$内有定义，$\vec{l}$为非零向量，$\vec{e}&lt;em&gt;{l}=(cos\alpha,cos\beta)$是与$\vec{l}$同方向的单位向量. 若极限
 $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\displaystyle \lim_{t \to 0^{+}}\frac{f(x_{0}+tcos\alpha ,y_{0}+tcos\beta )-f(x_{0},y_{0})}{t}\tag{1}$$
 存在，则称此极限值$\frac{\partial f}{\partial l}|&lt;/em&gt;{(x_{0},y_{0})}$为函数$z=f(x,y)$在点$P_{0}$处沿方向$\vec{l}$的方向导数.&lt;/p&gt;
 &lt;ul&gt;
