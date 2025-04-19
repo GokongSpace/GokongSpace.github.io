@@ -14,12 +14,13 @@
         
         <guid>https://gokongspace.github.io/p/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%92%8C%E6%A2%AF%E5%BA%A6/</guid>
         <description>&lt;h1 id=&#34;方向导数的定义&#34;&gt;方向导数的定义
-&lt;/h1&gt;&lt;p&gt;设函数$z=f(x,y)$在点$P_{0}(x_{0},y_{0})$的某邻域$U(P_{0})$内有定义，$\vec{l}$为非零向量，$\vec{e}&lt;em&gt;{l}=(cos\alpha,cos\beta)$是与$\vec{l}$同方向的单位向量. 若极限
-$$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\displaystyle \lim_{t \to 0^{+}}\frac{f(x_{0}+tcos\alpha ,y_{0}+tcos\beta )-f(x_{0},y_{0})}{t}\tag{1}$$
-存在，则称此极限值$\frac{\partial f}{\partial l}|&lt;/em&gt;{(x_{0},y_{0})}$为函数$z=f(x,y)$在点$P_{0}$处沿方向$\vec{l}$的方向导数.&lt;/p&gt;
+&lt;/h1&gt;&lt;p&gt;设函数$z=f(x,y)$在点$P_{0}(x_{0},y_{0})$的某邻域$U(P_{0})$内有定义，$\vec{l}$为非零向量，$\vec{e}_{l}=(cos\alpha,cos\beta)$是与$\vec{l}$同方向的单位向量. 若极限
+&lt;/p&gt;
+$$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\displaystyle \lim_{t \to 0^{+}}\frac{f(x_{0}+tcos\alpha ,y_{0}+tcos\beta )-f(x_{0},y_{0})}{t}\tag{1}$$&lt;p&gt;
+存在，则称此极限值$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}$为函数$z=f(x,y)$在点$P_{0}$处沿方向$\vec{l}$的方向导数.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;特别指出，这里的极限是单侧极限，这一点与偏导数概念是有区别的。&lt;/li&gt;
-&lt;li&gt;沿x轴正向（取$\vec{e}&lt;em&gt;{l}=(1,0)$）的方向导数为$\frac{\partial f}{\partial x}$；沿x轴负向（取$\vec{e}&lt;/em&gt;{l}=(-1,0)$）的方向导数为$-\frac{\partial f}{\partial x}$.&lt;/li&gt;
+&lt;li&gt;沿x轴正向（取$\vec{e}_{l}=(1,0)$）的方向导数为$\frac{\partial f}{\partial x}$；沿x轴负向（取$\vec{e}_{l}=(-1,0)$）的方向导数为$-\frac{\partial f}{\partial x}$.&lt;/li&gt;
 &lt;li&gt;若函数在该点沿x轴正向和负向的方向是导数都存在，偏导数$\frac{\partial f}{\partial x}$也不一定存在。更一般地，即使沿任意方向的方向导数都存在，也不一定可偏导。&lt;/li&gt;
 &lt;li&gt;可偏导无法推出沿任意方向的方向导数都存在，仅能推出沿坐标轴方向的方向导数存在。&lt;/li&gt;
 &lt;/ul&gt;
@@ -27,7 +28,7 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\displaystyle \lim_{t \to 0^{+}
 &lt;/h1&gt;&lt;p&gt;可微不是方向导数存在的必要条件，可微是方向导数存在的充分条件。
 方向导数可以通过偏导数来计算.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;（定理）设函数$z = f(x,y)$ 在点$P_{0}(x_{0},y_{0})$处可微，$\vec{l}$为任一非零向量，$\vec{e}&lt;em&gt;{l}= (cos\alpha,cos\beta)$是与$\vec{l}$同方向的单位向量，则函数$f(x,y)$在点$P&lt;/em&gt;{0}$沿方向$\vec{l}$的方向导数存在，且有（方向导数的计算公式）
+&lt;li&gt;（定理）设函数$z = f(x,y)$ 在点$P_{0}(x_{0},y_{0})$处可微，$\vec{l}$为任一非零向量，$\vec{e}_{l}= (cos\alpha,cos\beta)$是与$\vec{l}$同方向的单位向量，则函数$f(x,y)$在点$P_{0}$沿方向$\vec{l}$的方向导数存在，且有（方向导数的计算公式）
 $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=f_{x}(x_{0},y_{0})cos\alpha +f_{y}(x_{0},y_{0})cos\beta .\tag{2}$$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;方向导数的定义和计算公式的推广&#34;&gt;方向导数的定义和计算公式的推广
@@ -63,7 +64,7 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0},z_{0})}=\nabla f(x_{0},y_{0},z_{0
 &lt;li&gt;$\nabla (c_{1}u+c_{2}v)=c_{1}\nabla u+c_{2}\nabla v$，$c_{1},c_{2}$为常数；&lt;/li&gt;
 &lt;li&gt;$\nabla(uv)=v\nabla u+u\nabla v ;$&lt;/li&gt;
 &lt;li&gt;$\nabla(\frac{u}{v})=\frac{v\nabla u-u\nabla v}{v^{2}},v\neq 0;$&lt;/li&gt;
-&lt;li&gt;$\nabla f(u)=f&amp;rsquo;(u)\nabla u$，$f$是可微函数。&lt;/li&gt;
+&lt;li&gt;$\nabla f(u)=f&#39;(u)\nabla u$，$f$是可微函数。&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         </item>
@@ -80,11 +81,11 @@ $$\Delta z =f(x_{0}+\Delta x,y_{0}+\Delta y)-f(x_{0},y_{0})$$$$= [f(x_{0}+\Delta
 由一元函数的Lagrange中值定理
 &lt;/p&gt;
 $$f(x_{0}+\Delta x)-f(x)=f&#39;(\xi)\Delta x=f&#39;(x_{0}+\theta\Delta x)\Delta x $$&lt;p&gt;
-其中$(\xi 为中值，0&amp;lt;\xi&amp;lt;1).$
+其中$(\xi 为中值，0&lt;\xi&lt;1).$
 得到
 &lt;/p&gt;
 $$\Delta z =f_{x}(x_{0}+\theta_{1}\Delta x,y_{0}+\Delta y)\Delta x+f_{y}(x_{0},y_{0}+\theta_{2}\Delta y)\Delta y$$&lt;p&gt;
-其中$(0&amp;lt;\theta_{1},\theta_{2}&amp;lt;1).$
+其中$(0&lt;\theta_{1},\theta_{2}&lt;1).$
 这是&lt;strong&gt;微分中值定理&lt;/strong&gt;，其适用条件这里省略。
 微分中值定理建立了函数增量与偏导数之间的联系。&lt;/p&gt;
 &lt;ul&gt;
@@ -138,7 +139,7 @@ $$dz =A\Delta x+B\Delta y $$&lt;h1 id=&#34;一些关系&#34;&gt;一些关系
         <description>&lt;h1 id=&#34;连续函数的定义&#34;&gt;连续函数的定义
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;与一元函数一样，仍用极限值等于函数值来定义多元函数的连续性。&lt;/li&gt;
-&lt;li&gt;（定义）设函数$f(x,y)$在点$P_{0}(x_{0},y_{0})$的某个邻域$U(P_{0})$内有定义。若$$ \displaystyle \lim_{(x,y) \to (0,0)}f(x,y)=f(x_{0},y_{0})$$且对于$\forall \varepsilon &amp;gt; 0,\exists \delta &amp;gt;0$，使得当$$\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}}&lt;\delta $$时，有$$\left | f(x,y)-f(x_{0}-y_{0})\right |&lt;\varepsilon $$，则称函数$f(x,y)$在点$P_{0}$连续。&lt;/li&gt;
+&lt;li&gt;（定义）设函数$f(x,y)$在点$P_{0}(x_{0},y_{0})$的某个邻域$U(P_{0})$内有定义。若$$ \displaystyle \lim_{(x,y) \to (0,0)}f(x,y)=f(x_{0},y_{0})$$且对于$\forall \varepsilon &gt; 0,\exists \delta &gt;0$，使得当$$\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}}&lt;\delta $$时，有$$\left | f(x,y)-f(x_{0}-y_{0})\right |&lt;\varepsilon $$，则称函数$f(x,y)$在点$P_{0}$连续。&lt;/li&gt;
 &lt;li&gt;理解：在某一点连续需要满足三个条件
 &lt;ol&gt;
 &lt;li&gt;在该点极限存在；&lt;/li&gt;
@@ -227,7 +228,7 @@ $$\frac{\partial }{\partial y}\left ( \frac{\partial z}{\partial y} \right )=\fr
 $$ \mathbb{R}^{n}=\left\{ \left ( x_{1},x_{2},\cdot \cdot \cdot ,x_{n} \right )|x_{i}\in \mathbb{R},i=1,2,\cdot \cdot \cdot ,n\right\}$$&lt;/li&gt;
 &lt;li&gt;$\mathbb{R}^{n}$ 中的元素有时也用单个字母表示，即$x=\left ( x_{1},x_{2},\cdot \cdot \cdot ,x_{n} \right )$，$x$也称为$\mathbb{R}^{n}$中的一个点。&lt;/li&gt;
 &lt;li&gt;$\mathbb{R}^{n}$在线性运算$\lambda x+\mu y=\left (\lambda x_{1}+\mu y_{1} ,\lambda x_{2}+\mu y_{2},\cdot \cdot \cdot ,\lambda x_{n}+\mu y_{n} \right )$下构成一个&lt;strong&gt;n维线性空间&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;两点间的距离定义为$\rho \left ( x，y \right )= \left| x-y\right|$&lt;/li&gt;
+&lt;li&gt;两点间的距离定义为$\rho \left ( x，y \right )= \left\| x-y\right\|$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;邻域&#34;&gt;邻域
 &lt;/h1&gt;&lt;p&gt;点 $P_{0}$ 的 $\delta$ 邻域（本质是点集），记作：
@@ -247,7 +248,7 @@ $$\overset{\circ }{U}\left ( P_{0},\delta  \right )=\left\{ P|0&lt;\rho \left ( 
 &lt;/ul&gt;
 &lt;h1 id=&#34;有界集与无界集&#34;&gt;有界集与无界集
 &lt;/h1&gt;&lt;h1 id=&#34;聚点&#34;&gt;聚点
-&lt;/h1&gt;&lt;p&gt;设点集 $E\subset \mathbb{R}^{2}$ ，点$P_{0} \in \mathbb{R}^{2}$. 若$\forall  \varepsilon &amp;gt;0$，在$U\left ( P_{0}, \varepsilon \right)$内除了点$P_{0}$至少还包含$E$的一个点，则称$P_{0}$为$E$的聚点。
+&lt;/h1&gt;&lt;p&gt;设点集 $E\subset \mathbb{R}^{2}$ ，点$P_{0} \in \mathbb{R}^{2}$. 若$\forall  \varepsilon &gt;0$，在$U\left ( P_{0}, \varepsilon \right)$内除了点$P_{0}$至少还包含$E$的一个点，则称$P_{0}$为$E$的聚点。
 注意：边界点不一定是聚点；聚点不一定属于$E$.&lt;/p&gt;
 &lt;h1 id=&#34;闭集&#34;&gt;闭集
 &lt;/h1&gt;&lt;p&gt;设点集 $E\subset \mathbb{R}^{2}$ ，若$E$的所有聚点都属于$E$，则称$E$为$\mathbb{R}^{2}$的闭集。

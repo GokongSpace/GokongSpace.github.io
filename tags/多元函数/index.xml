@@ -16,7 +16,7 @@
         <description>&lt;h1 id=&#34;连续函数的定义&#34;&gt;连续函数的定义
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;与一元函数一样，仍用极限值等于函数值来定义多元函数的连续性。&lt;/li&gt;
-&lt;li&gt;（定义）设函数$f(x,y)$在点$P_{0}(x_{0},y_{0})$的某个邻域$U(P_{0})$内有定义。若$$ \displaystyle \lim_{(x,y) \to (0,0)}f(x,y)=f(x_{0},y_{0})$$且对于$\forall \varepsilon &amp;gt; 0,\exists \delta &amp;gt;0$，使得当$$\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}}&lt;\delta $$时，有$$\left | f(x,y)-f(x_{0}-y_{0})\right |&lt;\varepsilon $$，则称函数$f(x,y)$在点$P_{0}$连续。&lt;/li&gt;
+&lt;li&gt;（定义）设函数$f(x,y)$在点$P_{0}(x_{0},y_{0})$的某个邻域$U(P_{0})$内有定义。若$$ \displaystyle \lim_{(x,y) \to (0,0)}f(x,y)=f(x_{0},y_{0})$$且对于$\forall \varepsilon &gt; 0,\exists \delta &gt;0$，使得当$$\sqrt{(x-x_{0})^{2}+(y-y_{0})^{2}}&lt;\delta $$时，有$$\left | f(x,y)-f(x_{0}-y_{0})\right |&lt;\varepsilon $$，则称函数$f(x,y)$在点$P_{0}$连续。&lt;/li&gt;
 &lt;li&gt;理解：在某一点连续需要满足三个条件
 &lt;ol&gt;
 &lt;li&gt;在该点极限存在；&lt;/li&gt;
@@ -70,7 +70,7 @@
 $$ \mathbb{R}^{n}=\left\{ \left ( x_{1},x_{2},\cdot \cdot \cdot ,x_{n} \right )|x_{i}\in \mathbb{R},i=1,2,\cdot \cdot \cdot ,n\right\}$$&lt;/li&gt;
 &lt;li&gt;$\mathbb{R}^{n}$ 中的元素有时也用单个字母表示，即$x=\left ( x_{1},x_{2},\cdot \cdot \cdot ,x_{n} \right )$，$x$也称为$\mathbb{R}^{n}$中的一个点。&lt;/li&gt;
 &lt;li&gt;$\mathbb{R}^{n}$在线性运算$\lambda x+\mu y=\left (\lambda x_{1}+\mu y_{1} ,\lambda x_{2}+\mu y_{2},\cdot \cdot \cdot ,\lambda x_{n}+\mu y_{n} \right )$下构成一个&lt;strong&gt;n维线性空间&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;两点间的距离定义为$\rho \left ( x，y \right )= \left| x-y\right|$&lt;/li&gt;
+&lt;li&gt;两点间的距离定义为$\rho \left ( x，y \right )= \left\| x-y\right\|$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;邻域&#34;&gt;邻域
 &lt;/h1&gt;&lt;p&gt;点 $P_{0}$ 的 $\delta$ 邻域（本质是点集），记作：
@@ -90,7 +90,7 @@ $$\overset{\circ }{U}\left ( P_{0},\delta  \right )=\left\{ P|0&lt;\rho \left ( 
 &lt;/ul&gt;
 &lt;h1 id=&#34;有界集与无界集&#34;&gt;有界集与无界集
 &lt;/h1&gt;&lt;h1 id=&#34;聚点&#34;&gt;聚点
-&lt;/h1&gt;&lt;p&gt;设点集 $E\subset \mathbb{R}^{2}$ ，点$P_{0} \in \mathbb{R}^{2}$. 若$\forall  \varepsilon &amp;gt;0$，在$U\left ( P_{0}, \varepsilon \right)$内除了点$P_{0}$至少还包含$E$的一个点，则称$P_{0}$为$E$的聚点。
+&lt;/h1&gt;&lt;p&gt;设点集 $E\subset \mathbb{R}^{2}$ ，点$P_{0} \in \mathbb{R}^{2}$. 若$\forall  \varepsilon &gt;0$，在$U\left ( P_{0}, \varepsilon \right)$内除了点$P_{0}$至少还包含$E$的一个点，则称$P_{0}$为$E$的聚点。
 注意：边界点不一定是聚点；聚点不一定属于$E$.&lt;/p&gt;
 &lt;h1 id=&#34;闭集&#34;&gt;闭集
 &lt;/h1&gt;&lt;p&gt;设点集 $E\subset \mathbb{R}^{2}$ ，若$E$的所有聚点都属于$E$，则称$E$为$\mathbb{R}^{2}$的闭集。
