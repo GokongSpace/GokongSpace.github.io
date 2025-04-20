@@ -472,7 +472,7 @@
     
         
     <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
-<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
 <div id="waline" class="waline-container"></div>
 <style>
     .waline-container {
@@ -482,13 +482,30 @@
         padding: var(--card-padding);
         --waline-font-size: var(--article-font-size);
     }
-    .waline-container .wl-count {
-        color: var(--card-text-color-main);
-    }
+
+        .waline-container .wl-count {
+            color: var(--card-text-color-main);
+        }
 </style><script>
     
     Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"locale":{"admin":"Admin","placeholder":null},"requiredMeta":["name","email","url"],"serverURL":"https://www.gokong.space/"});
+</script><div id="article-info">
+    
+    ∂¡’ﬂ: <span class="waline-pageview-count" data-path="<%= window.location.pathname %>" />
+    
+</div>
+
+<div id="waline"></div>
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+        el: '#waline',
+        
+        pageview: true, 
+    });
 </script>
+
 
     
 
