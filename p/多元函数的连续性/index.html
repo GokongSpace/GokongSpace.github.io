@@ -489,6 +489,21 @@
 </style><script>
     
     Waline.init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"locale":{"admin":"Admin","placeholder":null},"requiredMeta":["name","email","url"],"serverURL":"https://www.gokong.space/"});
+</script><div id="article-info">
+    
+    ÔÄ¶ÁÁ¿: <span class="waline-pageview-count" data-path="<Your/Path/Name>" />
+    
+</div>
+
+<div id="waline"></div>
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+        el: '#waline',
+        
+        pageview: true, 
+    });
 </script>
 
     
