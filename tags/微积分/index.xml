@@ -56,11 +56,10 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\nabla f(x_{0},y_{0})\cdot \vec
 $$\nabla f(x_{0},y_{0})\cdot \vec{e}_{l}=|\nabla f(x_{0},y_{0})|\cdot |\vec{e}_{l}|\cdot cos\theta=|\nabla f(x_{0},y_{0})|cos\theta,\tag{7}$$&lt;p&gt;
 其中$\theta$是向量$\nabla f(x_{0},y_{0})$与向量$\vec{l}$的夹角。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[!NOTE]
-函数$z=f(x,y)$在点$P_{0}$处沿&lt;strong&gt;梯度&lt;/strong&gt;$\nabla f(x_{0},y_{0})$方向的方向导数最大，沿负梯度方向的方向导数最小。最大值为$|\nabla f(x_{0},y_{0})|$，最小值为$-|\nabla f(x_{0},y_{0})|.$
+&lt;p&gt;函数$z=f(x,y)$在点$P_{0}$处沿&lt;strong&gt;梯度&lt;/strong&gt;$\nabla f(x_{0},y_{0})$方向的方向导数最大，沿负梯度方向的方向导数最小。最大值为$|\nabla f(x_{0},y_{0})|$，最小值为$-|\nabla f(x_{0},y_{0})|.$
 等价表述为：方向导数增大最快的方向是梯度方向，增加最慢的方向是垂直于梯度的方向。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h1 id=&#34;梯度的推广&#34;&gt;梯度的推广
-&lt;/h1&gt;&lt;p&gt;将上述概念和结论推广到三元函数：
+&lt;/h1&gt;&lt;p&gt;将上述概念和结论推广到三元函数：&lt;br&gt;
 设函数$u=f(x,y,z)$在点$P_{0}(x_{0},y_{0},z_{0})$处有连续的偏导数，则它在点$P_{0}$处的梯度为
 &lt;/p&gt;
 $$gradf(x_{0},y_{0},z_{0})=\nabla f(x_{0},y_{0},z_{0})=f_{x}(x_{0},y_{0},z_{0})\vec{i}+f_{y}(x_{0},y_{0},z_{0})\vec{j}+f_{z}(x_{0},y_{0},z_{0})\vec{k}.\tag{8}$$&lt;p&gt;当$u=f(x,y,z)$在点$P_{0}$处可微时，它在点$P_{0}$处沿方向$\vec{l}$的方向导数为
@@ -79,7 +78,7 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0},z_{0})}=\nabla f(x_{0},y_{0},z_{0
 $$\nabla f |_{p}=(f_{x},f_{y})|_{p}$$&lt;p&gt;
 梯度的方向垂直于等值线的切线，指向函数增大的方向。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[!NOTE] Proof
+&lt;p&gt;Proof&lt;br&gt;
 因为曲线$L$是隐式定义的，所以$P$点处的等值线的切线的斜率为$k=\frac{dy}{dx}=-\frac{f_{x}}{f_{y}}$，则切线的方向向量为$\vec{s}=(1,k)$，所以$\vec{s} \cdot \overrightarrow{\nabla}f=f_{x}+(-\frac{f_{x}}{f_{y}})f_{y}=0$，即梯度的方向垂直于等值线的切线。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h1 id=&#34;哈密顿hamilton算子&#34;&gt;哈密顿（Hamilton）算子
 &lt;/h1&gt;&lt;ul&gt;
@@ -148,10 +147,10 @@ $$\Delta z =A\Delta x+B\Delta y + o(\rho)$$&lt;p&gt;
 其全微分记作
 &lt;/p&gt;
 $$dz =A\Delta x+B\Delta y $$&lt;blockquote&gt;
-&lt;p&gt;[!NOTE] 直观理解
+&lt;p&gt;直观理解
 “可微”means“增量可以表示为自变量增量的线性部分加上高阶无穷小。”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;[!NOTE] 证明函数在某点可微
+&lt;p&gt;证明函数在某点可微
 此处以$(0,0)$点为例：
 欲证函数在$(0,0)$点可微，只需证
 &lt;/p&gt;
