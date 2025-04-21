@@ -228,6 +228,7 @@
     <li><a href="#写在前面">写在前面</a></li>
     <li><a href="#定义">定义</a></li>
     <li><a href="#一些关系">一些关系</a></li>
+    <li><a href="#重要例题">重要例题</a></li>
   </ol>
 </nav>
         </div>
@@ -322,7 +323,7 @@ $$\Delta z =f_{x}(x_{0}+\theta_{1}\Delta x,y_{0}+\Delta y)\Delta x+f_{y}(x_{0},y
 </h1><p>对于一元函数$y=f(x)$，若在点$x_{0}$处该函数的增量可以表示成
 </p>
 $$\Delta y=f(x_{0}+\Delta x)-f(x_{0})=A\Delta x +o(\Delta x)$$<p>
-则我们称$y=f(x)$在点$x_{0}$处可微。<br>
+则我们称$y=f(x)$在点$x_{0}$处<strong>可微</strong>。<br>
 其微分记作
 </p>
 $$dy=A\Delta x$$<p>
@@ -335,14 +336,23 @@ $$\Delta z =A\Delta x+B\Delta y + o(\rho)$$<p>
 的形式，则称$f(x,y)$在$P_{0}(x_{0},y_{0})$处可微。<br>
 其全微分记作
 </p>
-$$dz =A\Delta x+B\Delta y $$<h1 id="一些关系">一些关系
+$$dz =A\Delta x+B\Delta y $$<blockquote>
+<p>[!NOTE] 直观理解
+“可微”means“增量可以表示为自变量增量的线性部分加上高阶无穷小。”</p></blockquote>
+<blockquote>
+<p>[!NOTE] 证明函数在某点可微
+此处以$(0,0)$点为例：
+欲证函数在$(0,0)$点可微，只需证
+</p>
+$$\displaystyle \lim_{(\Delta x,\Delta y) \to (0,0)}\frac{f(\Delta x,\Delta y)-f(0,0)-f_{x}(0,0)\Delta x-f_{y}(0,0)\Delta y}{\sqrt{(\Delta x)^{2}+(\Delta y)^{2}}}=0$$</blockquote>
+<h1 id="一些关系">一些关系
 </h1><ul>
 <li>对于一元函数：在某一点<strong>可导的充要条件是可微。</strong></li>
 <li>若$f(x,y)$在$P_{0}(x_{0},y_{0})$处<strong>可微</strong>，则$f(x,y)$在$P_{0}(x_{0},y_{0})$处<strong>连续</strong>。</li>
 <li>若$f(x,y)$在$P_{0}(x_{0},y_{0})$处<strong>可微</strong>，则$f(x,y)$在$P_{0}(x_{0},y_{0})$处<strong>可偏导</strong>，且有$$dz =A\Delta x+B\Delta y $$$$=f_{x}(x_{0},y_{0})\Delta x +f_{y}(x_{0},y_{0})\Delta y$$$$=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy$$
 <ul>
 <li>我们规定，自变量的微分$dx=\Delta x,dy=\Delta y$</li>
-<li>第三行就是全微分的计算公式。</li>
+<li>第三行就是<strong>全微分的计算公式</strong>。</li>
 </ul>
 </li>
 <li>连续&lt;=/=&gt;可偏导</li>
@@ -350,6 +360,39 @@ $$dz =A\Delta x+B\Delta y $$<h1 id="一些关系">一些关系
 <li>偏导数存在且都连续 ==&gt;可微（反之不成立）</li>
 <li>偏导数存在且都有界 ==&gt;连续（反之不成立）</li>
 </ul>
+<h1 id="重要例题">重要例题
+</h1><p>注意：符号$f_{x}(x,y)$与$f'_{x}(x,y)$含义完全相同。
+例题：
+</p>
+$$f(x,y)= \left\{\begin{matrix}
+\frac{x^{3}}{\sqrt{x^{2}+y^{2}}} ,& (x,y)\neq (0,0) \\
+0 ,& (x,y)= (0,0) \\
+\end{matrix}\right.$$<p>
+请分析$f_{x}(x,y)$和$f_{y}(x,y)$在点$(0,0)$处的连续性。</p>
+<p>解：<br>
+先求函数关于x的偏导数
+</p>
+$$f_{x}(x,y)= \left\{\begin{matrix}
+\frac{3x^{2}}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}} , & (x,y)\neq (0,0) ,(把y看作常数直接求导) \\
+ \displaystyle \lim_{x \to 0}\frac{f(x,0)-f(0,0)}{x}=\displaystyle \lim_{x \to 0}\frac{f(x,0)}{x}=\displaystyle \lim_{x \to 0}\frac{x^{3}}{\sqrt{x^{2}+x^{2}}}=0,& (x,y)= (0,0),(用定义求间断点的偏导数) \\
+\end{matrix}\right.$$<p>
+接下来，欲证$f_{x}(x,y)$在点$(0,0)$处连续，只需证</p>
+$$\displaystyle \lim_{(x,y) \to (0,0)}f_{x}(x,y)=f_{x}(0,0)$$<p>
+即只需证
+</p>
+$$\displaystyle \lim_{(x,y) \to (0,0)}(\frac{3x^{2}}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}})=0$$<p>方法一：令$M=\frac{3x^{2}}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}},$
+则 $|M|\leqslant \frac{3(x^{2}+y^{2})}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}+2x^{2}y^{2}+y^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}}=2\sqrt{x^{2}+y^{2}},$
+当$(x,y)\to (0,0)$时，$|M|\to 0,$
+故$f_{x}(x,y)$在点$(0,0)$处连续。
+方法二：因为分母有$x^{2}+y^{2}$所以采用三角换元
+</p>
+$$\left ( x,y \right )\to (0,0)\Leftrightarrow 距离\rho =\sqrt{x^{2}+y^{2}}\to 0\Leftrightarrow \left\{\begin{matrix}
+x=rcos\theta  \\y=rsin\theta 
+\end{matrix}\right.(r\to 0)$$<p>
+则</p>
+$$\displaystyle \lim_{(x,y) \to (0,0)}(\frac{3x^{2}}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}})=\displaystyle \lim_{(x,y) \to (0,0)}(\frac{3r^{2}cos^{2}\theta}{r}-\frac{r^{4}cos^{4}\theta}{r^{3}})=0,$$<p>
+故$f_{x}(x,y)$在点$(0,0)$处连续。</p>
+<p>同理可证$f_{y}(x,y)$在点$(0,0)$处连续。</p>
 
 </section>
 

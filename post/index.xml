@@ -34,9 +34,12 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\displaystyle \lim_{t \to 0^{+}
 &lt;ul&gt;
 &lt;li&gt;特别指出，这里的极限是单侧极限，这一点与偏导数概念是有区别的。&lt;/li&gt;
 &lt;li&gt;沿x轴正向（取$\vec{e}_{l}=(1,0)$）的方向导数为$\frac{\partial f}{\partial x}$；沿x轴负向（取$\vec{e}_{l}=(-1,0)$）的方向导数为$-\frac{\partial f}{\partial x}$.&lt;/li&gt;
+&lt;li&gt;若只用一个角度来表示方向，可以用极角$\theta$，令$cos\alpha=cos\theta,cos\beta=sin\theta,(0\leqslant   \theta &lt; 2\pi).$&lt;/li&gt;
 &lt;li&gt;若函数在该点沿x轴正向和负向的方向是导数都存在，偏导数$\frac{\partial f}{\partial x}$也不一定存在。更一般地，即使沿任意方向的方向导数都存在，也不一定可偏导。&lt;/li&gt;
 &lt;li&gt;可偏导无法推出沿任意方向的方向导数都存在，仅能推出沿坐标轴方向的方向导数存在。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1 id=&#34;方向导数的几何意义&#34;&gt;方向导数的几何意义
+&lt;/h1&gt;&lt;p&gt;过直线$l$且平行于$z$轴的平面与曲面 $z = f(x, y)$ 的交线为$L$。方向导数是函数$f(x, y)$在点 $(x_{0}, y_{0})$ 处沿方向 $\vec{\boldsymbol{e}_l} = (\cos\alpha, \cos\beta)$ 的变化率。从几何上看，它表示曲线 $L$ 在点$(x_{0}, y_{0})$处的切线相对于方向$\vec{\boldsymbol{e}_l}$的斜率$\tan\theta$.&lt;/p&gt;
 &lt;h1 id=&#34;方向导数的计算&#34;&gt;方向导数的计算
 &lt;/h1&gt;&lt;p&gt;可微不是方向导数存在的必要条件，可微是方向导数存在的充分条件。
 方向导数可以通过偏导数来计算.&lt;/p&gt;
@@ -64,8 +67,11 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\nabla f(x_{0},y_{0})\cdot \vec
 化简$(6)$式
 &lt;/p&gt;
 $$\nabla f(x_{0},y_{0})\cdot \vec{e}_{l}=|\nabla f(x_{0},y_{0})|\cdot |\vec{e}_{l}|\cdot cos\theta=|\nabla f(x_{0},y_{0})|cos\theta,\tag{7}$$&lt;p&gt;
-其中$\theta$是向量$\nabla f(x_{0},y_{0})$与向量$\vec{l}$的夹角。
-因此，函数$z=f(x,y)$在点$P_{0}$处沿&lt;strong&gt;梯度&lt;/strong&gt;$\nabla f(x_{0},y_{0})$方向的方向导数最大，沿负梯度方向的方向导数最小。最大值为$|\nabla f(x_{0},y_{0})|$，最小值为$-|\nabla f(x_{0},y_{0})|.$&lt;/p&gt;
+其中$\theta$是向量$\nabla f(x_{0},y_{0})$与向量$\vec{l}$的夹角。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+函数$z=f(x,y)$在点$P_{0}$处沿&lt;strong&gt;梯度&lt;/strong&gt;$\nabla f(x_{0},y_{0})$方向的方向导数最大，沿负梯度方向的方向导数最小。最大值为$|\nabla f(x_{0},y_{0})|$，最小值为$-|\nabla f(x_{0},y_{0})|.$
+等价表述为：方向导数增大最快的方向是梯度方向，增加最慢的方向是垂直于梯度的方向。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h1 id=&#34;梯度的推广&#34;&gt;梯度的推广
 &lt;/h1&gt;&lt;p&gt;将上述概念和结论推广到三元函数：
 设函数$u=f(x,y,z)$在点$P_{0}(x_{0},y_{0},z_{0})$处有连续的偏导数，则它在点$P_{0}$处的梯度为
@@ -79,7 +85,35 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0},z_{0})}=\nabla f(x_{0},y_{0},z_{0
 &lt;li&gt;$\nabla(\frac{u}{v})=\frac{v\nabla u-u\nabla v}{v^{2}},v\neq 0;$&lt;/li&gt;
 &lt;li&gt;$\nabla f(u)=f&#39;(u)\nabla u$，$f$是可微函数。&lt;/li&gt;
 &lt;/ol&gt;
-</description>
+&lt;h1 id=&#34;梯度的几何意义&#34;&gt;梯度的几何意义
+&lt;/h1&gt;&lt;p&gt;将函数$z=f(x,y)$与平面$z=C$形成的交线在Oxy平面上的投影曲线记作$L$，则$L$称为函数$f$的&lt;strong&gt;等值线&lt;/strong&gt;。
+在等值线上取任意一点$P$，若$f_{x},f_{y}$不同时为0，则$P$点处的梯度为
+&lt;/p&gt;
+$$\nabla f |_{p}=(f_{x},f_{y})|_{p}$$&lt;p&gt;
+梯度的方向垂直于等值线的切线，指向函数增大的方向。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE] Proof
+因为曲线$L$是隐式定义的，所以$P$点处的等值线的切线的斜率为$k=\frac{dy}{dx}=-\frac{f_{x}}{f_{y}}$，则切线的方向向量为$\vec{s}=(1,k)$，所以$\vec{s} \cdot \overrightarrow{\nabla}f=f_{x}+(-\frac{f_{x}}{f_{y}})f_{y}=0$，即梯度的方向垂直于等值线的切线。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;哈密顿hamilton算子&#34;&gt;哈密顿（Hamilton）算子
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;在三维直角坐标系中：$\nabla =(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z})$
+在二维空间中：$\nabla =(\frac{\partial }{\partial x},\frac{\partial }{\partial y})$
+这种形式使得它可以像向量一样参与 “点积”、“叉积” 等运算，但这些运算本质上是&lt;strong&gt;微分操作&lt;/strong&gt;，而非单纯的向量代数运算。&lt;/li&gt;
+&lt;li&gt;哈密顿算子的核心是其&lt;strong&gt;微分功能&lt;/strong&gt;，它必须作用于函数（标量场或向量场）后才能体现意义：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;梯度（作用于标量场 f）&lt;/strong&gt;：$\nabla f = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right)$，其结果是一个向量，表示标量场的空间变化率。（因此，梯度的运算法则与求导的运算法则基本相似。）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;散度（作用于向量场 F）&lt;/strong&gt;：$\nabla \cdot \mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}$结果是一个标量，表示向量场的 “发散” 程度。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;旋度（作用于向量场 F）&lt;/strong&gt;：$\nabla \times \mathbf{F} = \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z}, \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}, \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right)$ 结果是一个向量，表示向量场的 “旋转” 特性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;例如，当写出 $\nabla f$ 时，其意义不是 “向量 ∇ 与标量 f 相乘”，而是 “对 f 求梯度”；$\nabla \cdot \mathbf{F}$ 也不是 “向量点积”，而是 “对向量场 $\mathbf{F}$ 求散度”。&lt;/li&gt;
+&lt;li&gt;这种 “向量形式” 的设计，使得它在数学和物理（如电磁学、流体力学）中成为高效的工具，既能利用向量运算的直观性，又能实现微分操作的功能。&lt;/li&gt;
+&lt;li&gt;由上方定义(5)，我们知道$\nabla f$本质是个向量，为了避免混淆和提醒作用，一般手写作 $\overrightarrow{\nabla}f$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;总结&#34;&gt;总结
+&lt;/h1&gt;&lt;p&gt;本文介绍了方向导数和梯度，并且将方向导数用梯度进行了表示：
+&lt;/p&gt;
+$$\frac{\partial f}{\partial l}=f_{x}cos\alpha +f_{y}cos\beta+f_{z}cos\gamma =\overrightarrow{\nabla}f \cdot \vec{e}_{l}$$</description>
         </item>
         <item>
         <title>全微分</title>
@@ -113,7 +147,7 @@ $$\Delta z =f_{x}(x_{0}+\theta_{1}\Delta x,y_{0}+\Delta y)\Delta x+f_{y}(x_{0},y
 &lt;/h1&gt;&lt;p&gt;对于一元函数$y=f(x)$，若在点$x_{0}$处该函数的增量可以表示成
 &lt;/p&gt;
 $$\Delta y=f(x_{0}+\Delta x)-f(x_{0})=A\Delta x +o(\Delta x)$$&lt;p&gt;
-则我们称$y=f(x)$在点$x_{0}$处可微。&lt;br&gt;
+则我们称$y=f(x)$在点$x_{0}$处&lt;strong&gt;可微&lt;/strong&gt;。&lt;br&gt;
 其微分记作
 &lt;/p&gt;
 $$dy=A\Delta x$$&lt;p&gt;
@@ -126,14 +160,23 @@ $$\Delta z =A\Delta x+B\Delta y + o(\rho)$$&lt;p&gt;
 的形式，则称$f(x,y)$在$P_{0}(x_{0},y_{0})$处可微。&lt;br&gt;
 其全微分记作
 &lt;/p&gt;
-$$dz =A\Delta x+B\Delta y $$&lt;h1 id=&#34;一些关系&#34;&gt;一些关系
+$$dz =A\Delta x+B\Delta y $$&lt;blockquote&gt;
+&lt;p&gt;[!NOTE] 直观理解
+“可微”means“增量可以表示为自变量增量的线性部分加上高阶无穷小。”&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE] 证明函数在某点可微
+此处以$(0,0)$点为例：
+欲证函数在$(0,0)$点可微，只需证
+&lt;/p&gt;
+$$\displaystyle \lim_{(\Delta x,\Delta y) \to (0,0)}\frac{f(\Delta x,\Delta y)-f(0,0)-f_{x}(0,0)\Delta x-f_{y}(0,0)\Delta y}{\sqrt{(\Delta x)^{2}+(\Delta y)^{2}}}=0$$&lt;/blockquote&gt;
+&lt;h1 id=&#34;一些关系&#34;&gt;一些关系
 &lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;对于一元函数：在某一点&lt;strong&gt;可导的充要条件是可微。&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;若$f(x,y)$在$P_{0}(x_{0},y_{0})$处&lt;strong&gt;可微&lt;/strong&gt;，则$f(x,y)$在$P_{0}(x_{0},y_{0})$处&lt;strong&gt;连续&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;若$f(x,y)$在$P_{0}(x_{0},y_{0})$处&lt;strong&gt;可微&lt;/strong&gt;，则$f(x,y)$在$P_{0}(x_{0},y_{0})$处&lt;strong&gt;可偏导&lt;/strong&gt;，且有$$dz =A\Delta x+B\Delta y $$$$=f_{x}(x_{0},y_{0})\Delta x +f_{y}(x_{0},y_{0})\Delta y$$$$=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy$$
 &lt;ul&gt;
 &lt;li&gt;我们规定，自变量的微分$dx=\Delta x,dy=\Delta y$&lt;/li&gt;
-&lt;li&gt;第三行就是全微分的计算公式。&lt;/li&gt;
+&lt;li&gt;第三行就是&lt;strong&gt;全微分的计算公式&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;连续&amp;lt;=/=&amp;gt;可偏导&lt;/li&gt;
@@ -141,6 +184,39 @@ $$dz =A\Delta x+B\Delta y $$&lt;h1 id=&#34;一些关系&#34;&gt;一些关系
 &lt;li&gt;偏导数存在且都连续 ==&amp;gt;可微（反之不成立）&lt;/li&gt;
 &lt;li&gt;偏导数存在且都有界 ==&amp;gt;连续（反之不成立）&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1 id=&#34;重要例题&#34;&gt;重要例题
+&lt;/h1&gt;&lt;p&gt;注意：符号$f_{x}(x,y)$与$f&#39;_{x}(x,y)$含义完全相同。
+例题：
+&lt;/p&gt;
+$$f(x,y)= \left\{\begin{matrix}
+\frac{x^{3}}{\sqrt{x^{2}+y^{2}}} ,&amp; (x,y)\neq (0,0) \\
+0 ,&amp; (x,y)= (0,0) \\
+\end{matrix}\right.$$&lt;p&gt;
+请分析$f_{x}(x,y)$和$f_{y}(x,y)$在点$(0,0)$处的连续性。&lt;/p&gt;
+&lt;p&gt;解：&lt;br&gt;
+先求函数关于x的偏导数
+&lt;/p&gt;
+$$f_{x}(x,y)= \left\{\begin{matrix}
+\frac{3x^{2}}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}} , &amp; (x,y)\neq (0,0) ,(把y看作常数直接求导) \\
+ \displaystyle \lim_{x \to 0}\frac{f(x,0)-f(0,0)}{x}=\displaystyle \lim_{x \to 0}\frac{f(x,0)}{x}=\displaystyle \lim_{x \to 0}\frac{x^{3}}{\sqrt{x^{2}+x^{2}}}=0,&amp; (x,y)= (0,0),(用定义求间断点的偏导数) \\
+\end{matrix}\right.$$&lt;p&gt;
+接下来，欲证$f_{x}(x,y)$在点$(0,0)$处连续，只需证&lt;/p&gt;
+$$\displaystyle \lim_{(x,y) \to (0,0)}f_{x}(x,y)=f_{x}(0,0)$$&lt;p&gt;
+即只需证
+&lt;/p&gt;
+$$\displaystyle \lim_{(x,y) \to (0,0)}(\frac{3x^{2}}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}})=0$$&lt;p&gt;方法一：令$M=\frac{3x^{2}}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}},$
+则 $|M|\leqslant \frac{3(x^{2}+y^{2})}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}+2x^{2}y^{2}+y^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}}=2\sqrt{x^{2}+y^{2}},$
+当$(x,y)\to (0,0)$时，$|M|\to 0,$
+故$f_{x}(x,y)$在点$(0,0)$处连续。
+方法二：因为分母有$x^{2}+y^{2}$所以采用三角换元
+&lt;/p&gt;
+$$\left ( x,y \right )\to (0,0)\Leftrightarrow 距离\rho =\sqrt{x^{2}+y^{2}}\to 0\Leftrightarrow \left\{\begin{matrix}
+x=rcos\theta  \\y=rsin\theta 
+\end{matrix}\right.(r\to 0)$$&lt;p&gt;
+则&lt;/p&gt;
+$$\displaystyle \lim_{(x,y) \to (0,0)}(\frac{3x^{2}}{\sqrt{x^{2}+y^{2}}}-\frac{x^{4}}{(x^{2}+y^{2})^{\frac{3}{2}}})=\displaystyle \lim_{(x,y) \to (0,0)}(\frac{3r^{2}cos^{2}\theta}{r}-\frac{r^{4}cos^{4}\theta}{r^{3}})=0,$$&lt;p&gt;
+故$f_{x}(x,y)$在点$(0,0)$处连续。&lt;/p&gt;
+&lt;p&gt;同理可证$f_{y}(x,y)$在点$(0,0)$处连续。&lt;/p&gt;
 </description>
         </item>
         <item>

@@ -226,11 +226,15 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#方向导数的定义">方向导数的定义</a></li>
+    <li><a href="#方向导数的几何意义">方向导数的几何意义</a></li>
     <li><a href="#方向导数的计算">方向导数的计算</a></li>
     <li><a href="#方向导数的定义和计算公式的推广">方向导数的定义和计算公式的推广</a></li>
     <li><a href="#梯度">梯度</a></li>
     <li><a href="#梯度的推广">梯度的推广</a></li>
     <li><a href="#梯度的性质">梯度的性质</a></li>
+    <li><a href="#梯度的几何意义">梯度的几何意义</a></li>
+    <li><a href="#哈密顿hamilton算子">哈密顿（Hamilton）算子</a></li>
+    <li><a href="#总结">总结</a></li>
   </ol>
 </nav>
         </div>
@@ -307,9 +311,12 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\displaystyle \lim_{t \to 0^{+}
 <ul>
 <li>特别指出，这里的极限是单侧极限，这一点与偏导数概念是有区别的。</li>
 <li>沿x轴正向（取$\vec{e}_{l}=(1,0)$）的方向导数为$\frac{\partial f}{\partial x}$；沿x轴负向（取$\vec{e}_{l}=(-1,0)$）的方向导数为$-\frac{\partial f}{\partial x}$.</li>
+<li>若只用一个角度来表示方向，可以用极角$\theta$，令$cos\alpha=cos\theta,cos\beta=sin\theta,(0\leqslant   \theta < 2\pi).$</li>
 <li>若函数在该点沿x轴正向和负向的方向是导数都存在，偏导数$\frac{\partial f}{\partial x}$也不一定存在。更一般地，即使沿任意方向的方向导数都存在，也不一定可偏导。</li>
 <li>可偏导无法推出沿任意方向的方向导数都存在，仅能推出沿坐标轴方向的方向导数存在。</li>
 </ul>
+<h1 id="方向导数的几何意义">方向导数的几何意义
+</h1><p>过直线$l$且平行于$z$轴的平面与曲面 $z = f(x, y)$ 的交线为$L$。方向导数是函数$f(x, y)$在点 $(x_{0}, y_{0})$ 处沿方向 $\vec{\boldsymbol{e}_l} = (\cos\alpha, \cos\beta)$ 的变化率。从几何上看，它表示曲线 $L$ 在点$(x_{0}, y_{0})$处的切线相对于方向$\vec{\boldsymbol{e}_l}$的斜率$\tan\theta$.</p>
 <h1 id="方向导数的计算">方向导数的计算
 </h1><p>可微不是方向导数存在的必要条件，可微是方向导数存在的充分条件。
 方向导数可以通过偏导数来计算.</p>
@@ -337,8 +344,11 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0})}=\nabla f(x_{0},y_{0})\cdot \vec
 化简$(6)$式
 </p>
 $$\nabla f(x_{0},y_{0})\cdot \vec{e}_{l}=|\nabla f(x_{0},y_{0})|\cdot |\vec{e}_{l}|\cdot cos\theta=|\nabla f(x_{0},y_{0})|cos\theta,\tag{7}$$<p>
-其中$\theta$是向量$\nabla f(x_{0},y_{0})$与向量$\vec{l}$的夹角。
-因此，函数$z=f(x,y)$在点$P_{0}$处沿<strong>梯度</strong>$\nabla f(x_{0},y_{0})$方向的方向导数最大，沿负梯度方向的方向导数最小。最大值为$|\nabla f(x_{0},y_{0})|$，最小值为$-|\nabla f(x_{0},y_{0})|.$</p>
+其中$\theta$是向量$\nabla f(x_{0},y_{0})$与向量$\vec{l}$的夹角。</p>
+<blockquote>
+<p>[!NOTE]
+函数$z=f(x,y)$在点$P_{0}$处沿<strong>梯度</strong>$\nabla f(x_{0},y_{0})$方向的方向导数最大，沿负梯度方向的方向导数最小。最大值为$|\nabla f(x_{0},y_{0})|$，最小值为$-|\nabla f(x_{0},y_{0})|.$
+等价表述为：方向导数增大最快的方向是梯度方向，增加最慢的方向是垂直于梯度的方向。</p></blockquote>
 <h1 id="梯度的推广">梯度的推广
 </h1><p>将上述概念和结论推广到三元函数：
 设函数$u=f(x,y,z)$在点$P_{0}(x_{0},y_{0},z_{0})$处有连续的偏导数，则它在点$P_{0}$处的梯度为
@@ -352,7 +362,35 @@ $$\frac{\partial f}{\partial l}|_{(x_{0},y_{0},z_{0})}=\nabla f(x_{0},y_{0},z_{0
 <li>$\nabla(\frac{u}{v})=\frac{v\nabla u-u\nabla v}{v^{2}},v\neq 0;$</li>
 <li>$\nabla f(u)=f'(u)\nabla u$，$f$是可微函数。</li>
 </ol>
-
+<h1 id="梯度的几何意义">梯度的几何意义
+</h1><p>将函数$z=f(x,y)$与平面$z=C$形成的交线在Oxy平面上的投影曲线记作$L$，则$L$称为函数$f$的<strong>等值线</strong>。
+在等值线上取任意一点$P$，若$f_{x},f_{y}$不同时为0，则$P$点处的梯度为
+</p>
+$$\nabla f |_{p}=(f_{x},f_{y})|_{p}$$<p>
+梯度的方向垂直于等值线的切线，指向函数增大的方向。</p>
+<blockquote>
+<p>[!NOTE] Proof
+因为曲线$L$是隐式定义的，所以$P$点处的等值线的切线的斜率为$k=\frac{dy}{dx}=-\frac{f_{x}}{f_{y}}$，则切线的方向向量为$\vec{s}=(1,k)$，所以$\vec{s} \cdot \overrightarrow{\nabla}f=f_{x}+(-\frac{f_{x}}{f_{y}})f_{y}=0$，即梯度的方向垂直于等值线的切线。</p></blockquote>
+<h1 id="哈密顿hamilton算子">哈密顿（Hamilton）算子
+</h1><ul>
+<li>在三维直角坐标系中：$\nabla =(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z})$
+在二维空间中：$\nabla =(\frac{\partial }{\partial x},\frac{\partial }{\partial y})$
+这种形式使得它可以像向量一样参与 “点积”、“叉积” 等运算，但这些运算本质上是<strong>微分操作</strong>，而非单纯的向量代数运算。</li>
+<li>哈密顿算子的核心是其<strong>微分功能</strong>，它必须作用于函数（标量场或向量场）后才能体现意义：
+<ul>
+<li><strong>梯度（作用于标量场 f）</strong>：$\nabla f = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right)$，其结果是一个向量，表示标量场的空间变化率。（因此，梯度的运算法则与求导的运算法则基本相似。）</li>
+<li><strong>散度（作用于向量场 F）</strong>：$\nabla \cdot \mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}$结果是一个标量，表示向量场的 “发散” 程度。</li>
+<li><strong>旋度（作用于向量场 F）</strong>：$\nabla \times \mathbf{F} = \left( \frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z}, \frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}, \frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y} \right)$ 结果是一个向量，表示向量场的 “旋转” 特性。</li>
+</ul>
+</li>
+<li>例如，当写出 $\nabla f$ 时，其意义不是 “向量 ∇ 与标量 f 相乘”，而是 “对 f 求梯度”；$\nabla \cdot \mathbf{F}$ 也不是 “向量点积”，而是 “对向量场 $\mathbf{F}$ 求散度”。</li>
+<li>这种 “向量形式” 的设计，使得它在数学和物理（如电磁学、流体力学）中成为高效的工具，既能利用向量运算的直观性，又能实现微分操作的功能。</li>
+<li>由上方定义(5)，我们知道$\nabla f$本质是个向量，为了避免混淆和提醒作用，一般手写作 $\overrightarrow{\nabla}f$.</li>
+</ul>
+<h1 id="总结">总结
+</h1><p>本文介绍了方向导数和梯度，并且将方向导数用梯度进行了表示：
+</p>
+$$\frac{\partial f}{\partial l}=f_{x}cos\alpha +f_{y}cos\beta+f_{z}cos\gamma =\overrightarrow{\nabla}f \cdot \vec{e}_{l}$$
 </section>
 
 
