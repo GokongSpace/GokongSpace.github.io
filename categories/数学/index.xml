@@ -7,7 +7,120 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Gokong Space</copyright>
-        <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokongspace.github.io/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://gokongspace.github.io/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>一些常用公式</title>
+        <link>https://gokongspace.github.io/p/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F/</link>
+        <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://gokongspace.github.io/p/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%85%AC%E5%BC%8F/</guid>
+        <description>&lt;h1 id=&#34;微分公式&#34;&gt;微分公式
+&lt;/h1&gt;$$d C =0\tag{1}$$&lt;p&gt;
+&lt;/p&gt;
+$$dx^{\mu}=\mu x^{\mu -1}dx\tag{2}$$&lt;p&gt;
+&lt;/p&gt;
+$$da^{x}=a^{x}\ln a dx\tag{3}$$&lt;p&gt;
+&lt;/p&gt;
+$$de^{x}=e^{x}dx\tag{4}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\log _{a}x=\frac{1}{x\ln a}dx\tag{5}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\ln x=\frac{1}{x}dx\tag{6}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\sin x=\cos xdx\tag{7}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\cos x=-\sin xdx\tag{8}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\tan x=\sec ^{2}xdx\tag{9}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\cot x=-\csc ^{2}xdx\tag{10}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\sec x=\sec x\tan xdx\tag{11}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\csc x=-\csc x\cot xdx\tag{12}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\arcsin x=\frac{1}{\sqrt{1-x^{2}}}dx\tag{13}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\arccos x=-\frac{1}{\sqrt{1-x^{2}}}dx\tag{14}$$&lt;p&gt;
+&lt;/p&gt;
+$$d\arctan x=\frac{1}{1+x^{2}}dx\tag{15}$$&lt;p&gt;
+&lt;/p&gt;
+$$d arccot x=-\frac{1}{1+x^{2}}dx\tag{16}$$&lt;h1 id=&#34;积分公式&#34;&gt;积分公式
+&lt;/h1&gt;$$\int kdx=kx+C\tag{1}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int x^{\mu}dx=\frac{1}{\mu +1}x^{\mu +1}+C\tag{2}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \frac{1}{x}dx=\ln|x|+C\tag{3}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \frac{1}{1+x^{2}}dx=\arctan x+C\tag{4}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \frac{1}{\sqrt{1-x^{2}}}dx=\arcsin x+C\tag{5}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \cos xdx=\sin x+C\tag{6}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \sin xdx=-\cos x+C\tag{7}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \sec^{2}xdx=\tan x+C\tag{8}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \csc^{2}xdx=-\cot x+C\tag{9}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \sec x\tan xdx=\sec x+C\tag{10}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \csc x \cot xdx=-\csc x+C\tag{11}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int e^{x}dx=e^{x}+C\tag{12}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int a^{x}dx=\frac{a^{x}}{\ln a}+C\tag{13}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \sinh xdx=\cosh x+C\tag{14}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \cosh xdx=\sinh x+C\tag{15}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \tan xdx=-\ln |\cos x|+C\tag{16}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \cot xdx=\ln |\sin x|+C\tag{17}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \sec xdx=\ln |\sec x+\tan x|+C\tag{18}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \csc xdx=\ln |\csc x- \cot x|+C\tag{19}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \frac{1}{a^{2}+x^{2}}dx=\frac{1}{a}\arctan \frac{x}{a}+C\tag{20}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \frac{1}{x^{2}-a^{2}}dx=\frac{1}{2a}\ln | \frac{x-a}{x+a}|+C\tag{21}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \frac{1}{\sqrt{a^{2}-x^{2}}}dx=\arcsin \frac{x}{a}+C\tag{22}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \frac{1}{\sqrt{x^{2}+a^{2}}}dx=\ln (x+\sqrt{x^{2}+a^{2}})+C\tag{23}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \frac{1}{\sqrt{x^{2}-a^{2}}}dx=\ln |x+\sqrt{x^{2}-a^{2}}|+C\tag{24}$$&lt;p&gt;
+&lt;/p&gt;
+$$\int \sqrt{a^{2}-x^{2}}dx=\frac{a^{2}}{2}\arcsin \frac{x}{a}+\frac{x}{2}\sqrt{a^{2}-x^{2}}+C\tag{25}$$&lt;h1 id=&#34;无穷小代换&#34;&gt;无穷小代换
+&lt;/h1&gt;$$\sin x\sim x\tag{1}$$&lt;p&gt;
+&lt;/p&gt;
+$$\tan x\sim x\tag{2}$$&lt;p&gt;
+&lt;/p&gt;
+$$\arcsin x \sim x\tag{3}$$&lt;p&gt;
+&lt;/p&gt;
+$$\arctan x \sim x\tag{4}$$&lt;p&gt;
+&lt;/p&gt;
+$$\ln (1+x)\sim x\tag{5}$$&lt;p&gt;
+&lt;/p&gt;
+$$e^{x}-1\sim x\tag{6}$$&lt;p&gt;
+&lt;/p&gt;
+$$(1+x)^{\alpha}-1\sim \alpha x\tag{7}$$&lt;h1 id=&#34;三角&#34;&gt;三角
+&lt;/h1&gt;$$\sin^{2}\alpha+\cos^{2}\alpha = 1$$&lt;p&gt;
+&lt;/p&gt;
+$$1+\tan^{2}\alpha=\sec^{2}\alpha$$&lt;p&gt;
+&lt;/p&gt;
+$$1+\cot^{2}\alpha=\csc^{2}\alpha$$&lt;h1 id=&#34;maclaurin公式&#34;&gt;Maclaurin公式
+&lt;/h1&gt;$$\sin x =x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\cdot\cdot\cdot+(-1)^{m-1}\frac{x^{2m-1}}{(2m-1)!}+R_{2m}(x)\tag{1}$$&lt;p&gt;
+&lt;/p&gt;
+$$\cos x =1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+\cdot\cdot\cdot+(-1)^{m}\frac{x^{2m}}{(2m)!}+R_{2m+1}(x)\tag{1}$$&lt;blockquote&gt;
+&lt;p&gt;最近要期中考试了，今天晚上终于有时间复习一下基础知识。
+感觉曾经记过的很多公式如今都很不熟练了，看来还得加强练习口阿。
+打字匆忙，难免有纰漏之处，还请多多原谅！&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>方向导数和梯度</title>
         <link>https://gokongspace.github.io/p/%E6%96%B9%E5%90%91%E5%AF%BC%E6%95%B0%E5%92%8C%E6%A2%AF%E5%BA%A6/</link>
         <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
